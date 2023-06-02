@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net7.0;net6.0;net48</TargetFrameworks>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Deterministic>false</Deterministic>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Console.Net.TestApp\**" />
+    <Compile Remove="FluentConsole.TestApp\**" />
+    <EmbeddedResource Remove="Console.Net.TestApp\**" />
+    <EmbeddedResource Remove="FluentConsole.TestApp\**" />
+    <None Remove="Console.Net.TestApp\**" />
+    <None Remove="FluentConsole.TestApp\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" Condition="'$(TargetFramework)' == 'net48'" />
+  </ItemGroup>
+
+</Project>
