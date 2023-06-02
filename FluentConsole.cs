@@ -45,7 +45,7 @@ namespace FluentConsoleNet
             }
             else if (messageList.Count > 1)
             {
-                messageList.Insert(GetLastIndex(), $"[{color}]");
+                messageList.Insert(messageList.Count - 1, $"[{color}]");
                 messageList.Add($"[/{color}]");
             }
 
@@ -82,10 +82,7 @@ namespace FluentConsoleNet
         }
 
       
-        private int GetLastIndex()
-        {
-            return messageList.Count - 1;
-        }
+     
 
         private string ConvertListToString()
         {

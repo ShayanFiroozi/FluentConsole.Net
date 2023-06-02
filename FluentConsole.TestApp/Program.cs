@@ -33,7 +33,7 @@ namespace FluentConsoleNet.TestApp
                           .WriteLine(" Firoozi").WithColor(ConsoleColor.Blue)
                           .WriteLine("1402")
                           .WithColor(ConsoleColor.Red)
-                          .Print();
+                          .PrintAndLog();
 
             Console.WriteLine("Finished.");
         }
