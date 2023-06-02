@@ -36,7 +36,7 @@ namespace FluentConsoleNet
             return this;
         }
 
-        public ConsoleBuilder WithColor(ConsoleColor color)
+        public ConsoleBuilder WithFontColor(ConsoleColor color)
         {
             if (messageList.Count == 1)
             {
@@ -47,6 +47,23 @@ namespace FluentConsoleNet
             {
                 messageList.Insert(messageList.Count - 1, $"[{color}]");
                 messageList.Add($"[/{color}]");
+            }
+
+            return this;
+        }
+
+
+        public ConsoleBuilder WithBackColor(ConsoleColor color)
+        {
+            if (messageList.Count == 1)
+            {
+                messageList.Insert(0, $"bg[{color}]");
+                messageList.Add($"bg[/{color}]");
+            }
+            else if (messageList.Count > 1)
+            {
+                messageList.Insert(messageList.Count - 1, $"bg[{color}]");
+                messageList.Add($"bg[/{color}]");
             }
 
             return this;
@@ -111,6 +128,7 @@ namespace FluentConsoleNet
                     continue;
                 }
 
+                // Font Color
                 if (message.Substring(0, 1) == "[")
                 {
                     if (message.Substring(1, 1) == "/")
@@ -136,6 +154,35 @@ namespace FluentConsoleNet
                         continue;
                     }
                 }
+
+
+                 // Back Color
+                if (message.Substring(0, 3) == "bg[")
+                {
+                    if (message.Substring(3, 1) == "/")
+                    {
+                        Console.ResetColor();
+                        continue;
+                    }
+                    else
+                    {
+                        int leftBracket = message.LastIndexOf("bg[") + 2;
+                        int rightBracket = message.LastIndexOf(']');
+
+                        if (leftBracket == -1 || rightBracket == -1) continue;
+
+                        string colorName = message.Substring(leftBracket + 1, (rightBracket - leftBracket) - 1);
+
+                        if (string.IsNullOrEmpty(colorName))
+                        {
+                            continue;
+                        }
+
+                        Console.BackgroundColor = ColorHelper.GetConsoleColor(colorName);
+                        continue;
+                    }
+                }
+
 
                 Console.Write(message);
 
