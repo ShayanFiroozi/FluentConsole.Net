@@ -19,7 +19,7 @@ namespace FluentConsoleNet.TestApp
 
 
 
-    internal class Program
+    internal static class Program
     {
 
         private static readonly FastLogger fastLogger = new FastLogger();

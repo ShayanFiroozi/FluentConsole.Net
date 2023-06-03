@@ -14,6 +14,7 @@
 
 using FluentConsoleNet.Helpers;
 using System;
+using System.Text;
 
 namespace FluentConsoleNet
 {
@@ -23,7 +24,7 @@ namespace FluentConsoleNet
         private string ProcessMessageList()
         {
 
-            string totalText = string.Empty;
+            StringBuilder totalText = new StringBuilder();
 
             try
             {
@@ -101,28 +102,24 @@ namespace FluentConsoleNet
 
                     //Process Console Title
 
-                    if (message.Length > (ConsoleTitleSign.Length + CommandSign.Length))
+                    if (message.Length > (ConsoleTitleSign.Length + CommandSign.Length) && message.Substring(0, ConsoleTitleSign.Length) == ConsoleTitleSign &&
+                           message.Substring(message.Length - CommandSign.Length, CommandSign.Length) == CommandSign)
                     {
 
-                        if (message.Substring(0, ConsoleTitleSign.Length) == ConsoleTitleSign &&
-                           message.Substring(message.Length - CommandSign.Length, CommandSign.Length) == CommandSign)
+                        string title = message.Substring(ConsoleTitleSign.Length, message.Length - (ConsoleTitleSign.Length + CommandSign.Length));
+
+                        if (string.IsNullOrEmpty(title))
                         {
-
-                            string title = message.Substring(ConsoleTitleSign.Length, message.Length - (ConsoleTitleSign.Length + CommandSign.Length));
-
-                            if (string.IsNullOrEmpty(title))
-                            {
-                                continue;
-                            }
-
-                            Console.Title = title;
                             continue;
-
                         }
+
+                        Console.Title = title;
+                        continue;
+
                     }
 
 
-                    totalText += message;
+                    totalText.Append(message);
                     Console.Write(message);
                     Console.ResetColor();
 
@@ -130,7 +127,7 @@ namespace FluentConsoleNet
 
                 }
 
-                return totalText;
+                return totalText.ToString();
             }
             catch
             {
