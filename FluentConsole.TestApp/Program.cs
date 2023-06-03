@@ -12,7 +12,6 @@ namespace FluentConsoleNet.TestApp
 
         public Task LogConsole(string LogText, string Details = "", int EventId = 0)
         {
-
             Console.WriteLine($"Logged -> {LogText}");
             return Task.CompletedTask;
         }
@@ -29,6 +28,18 @@ namespace FluentConsoleNet.TestApp
         {
             FluentConsole.AttachLogger(fastLogger);
 
+
+            FluentConsole.Console
+                           .WithFontColor(ConsoleColor.Yellow)
+                           .WithBackColor(ConsoleColor.DarkGray)
+                             .Write(DateTime.Now.ToString())
+                             .AddSpace(1)
+
+                           .WriteLine("Shayan Firoozi")
+                           .AddCharacter('*', 20)
+                           .AddBreakLine(5).PrintAndLog();
+
+            return;
             while (true)
             {
                 Task.Run(() =>
@@ -59,7 +70,7 @@ namespace FluentConsoleNet.TestApp
                    .AddSpace(1)
 
                  .WriteLine("Ajibe !!!")
-                 .Print();
+                 .PrintAndLog();
 
                 1364.PrintOnConsole(true);
                 true.PrintOnConsole();
