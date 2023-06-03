@@ -122,7 +122,7 @@ namespace FluentConsoleNet
 
 
 
-        public FluentConsoleBuilder AddSpace(int SpaceCount)
+        public FluentConsoleBuilder AddSpace(int SpaceCount = 1)
         {
             MessageList.Add(new string(' ', SpaceCount));
 
