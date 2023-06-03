@@ -23,9 +23,8 @@ Since this is a new repository , there's no contributor yet! , But **FluentConso
 
 <br/>
  
-## ❔ How To Use
- ### Step 1 👇  
- - An elegant fluent builder pattern to work with **Console** :  
+## ❔ How To Use  
+ - An elegant fluent builder pattern to work with **Console** 👇   
  
  ```csharp
  FluentConsole.Console
@@ -40,7 +39,7 @@ Since this is a new repository , there's no contributor yet! , But **FluentConso
               .Print();
  ```   
 
- - Another Example with  [**FastLog.Net**](https://github.com/ShayanFiroozi/FastLog.Net) , high performance logger :  
+ - Another Example with  [**FastLog.Net**](https://github.com/ShayanFiroozi/FastLog.Net) , high performance logger 👇  
 
 
  ```csharp
@@ -55,7 +54,20 @@ Since this is a new repository , there's no contributor yet! , But **FluentConso
                     .Beep()
                     .PrintAndLog();
  ```   
+ 
+  - Also u can easily use built-in **Extension Methods** 👇   
 
+
+ ```csharp
+1364.PrintOnConsole(Formatted: true);
+true.PrintOnConsole();
+false.PrintOnConsole(YesNoFormat: true);
+ 
+ // Also for List<string>
+List<string> greatest = new List<string>() { "David Gilmour", "Soe Satriani", "Stevie Ray Vaughan", "Slash !", "Paul Mccartney" };
+greatest.PrintLineOnConsole();
+ 
+```  
  
 ## ‼ Known Issues
  **Not Reported Yet!** 😎
