@@ -63,7 +63,7 @@ true.PrintOnConsole();
 false.PrintOnConsole(YesNoFormat: true);
  
  // Also for List<string>
-List<string> greatest = new List<string>() { "David Gilmour", "Soe Satriani", "Stevie Ray Vaughan", "Slash !", "Paul Mccartney" };
+List<string> greatest = new List<string>() { "David Gilmour", "Joe Satriani", "Stevie Ray Vaughan", "Slash !", "Paul Mccartney" };
 greatest.PrintLineOnConsole();
  
 ```  
