@@ -22,7 +22,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Fluent Console For .Net")]
-[assembly: AssemblyDescription("Working With .Net Console In Elegant Way !")]
+[assembly: AssemblyDescription("Using .Net Console In Elegant Way !")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("TrendSoft® , Bandar Abbas , Iran")]
 [assembly: AssemblyProduct("TrendSoft® FluentConsole.Net")]

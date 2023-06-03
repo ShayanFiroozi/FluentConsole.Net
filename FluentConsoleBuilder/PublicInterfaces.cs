@@ -145,7 +145,7 @@ namespace FluentConsoleNet
             return this;
         }
 
-        public FluentConsoleBuilder AddBreakLine(int BreakLineCount)
+        public FluentConsoleBuilder AddLineBreak(int BreakLineCount)
         {
 
             for (int i = 0; i < BreakLineCount; i++)

@@ -40,9 +40,9 @@ namespace FluentConsoleNet.TestApp
 
                               .WriteLine("Shayan Firoozi")
                               .AddCharacter('*', 20)
-                              .AddBreakLine(5).Print();
+                              .AddLineBreak(5).Print();
 
-                    FluentConsole.Console.AddBreakLine(5).Print();
+                    FluentConsole.Console.AddLineBreak(5).Print();
 
                     FluentConsole.Console
                              .WithFontColor(ConsoleColor.Yellow)
@@ -52,7 +52,7 @@ namespace FluentConsoleNet.TestApp
 
                              .WriteLine("Shayan Firoozi")
                              .AddCharacter('*', 20)
-                             .AddBreakLine(5).PrintAndLog();
+                             .AddLineBreak(5).PrintAndLog();
 
 
 
@@ -76,6 +76,14 @@ namespace FluentConsoleNet.TestApp
                 true.PrintOnConsole();
 
                 Task.Delay(1).GetAwaiter().GetResult();
+
+                FluentConsole.Console
+                    .WithTitle("This is the Fluent Console For .Net")
+                    .WithFontColor(ConsoleColor.Yellow)
+                    .AddLine(LineWidth: 20)
+                    .Write("Who wants to live forever ?!")
+                    .Beep()
+                    .PrintAndLog();
 
 
 
