@@ -7,6 +7,20 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <ApplicationIcon>command.ico</ApplicationIcon>
     <PackageIcon>command.png</PackageIcon>
+    <Title>FluentConsole.Net  , Using .Net Console In Elegant Way !</Title>
+    <Version>1.0.8555</Version>
+    <Authors>Shayan Firoozi &lt;shayan.firoozi@gmail.com&gt;</Authors>
+    <Company>TrendSoft®</Company>
+    <Description>Working with .Net Console in elegant way with fluent builder interface.</Description>
+    <Copyright>Copyright © 2023 TrendSoft® (MIT License)</Copyright>
+    <PackageProjectUrl>https://github.com/ShayanFiroozi/FluentConsole.Net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ShayanFiroozi/FluentConsole.Net</RepositoryUrl>
+    <PackageReadmeFile>README-Nuget.md</PackageReadmeFile>
+    <PackageReleaseNotes>✔ Firt Release.</PackageReleaseNotes>
+    <PackageTags>console;csharp;dotnet;net7;net6;net48;fluent;helper;c#</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,7 +36,6 @@
     <None Remove="CHANGELOG.md" />
     <None Remove="DONATIONS.md" />
     <None Remove="LICENSE.md" />
-    <None Remove="README-Nuget.md" />
     <None Remove="README.md" />
     <None Remove="ToDo.md" />
   </ItemGroup>
@@ -32,14 +45,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\..\..\..\..\_Resources_\Icons\command.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" Condition="'$(TargetFramework)' == 'net48'" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" Condition="'$(TargetFramework)' == 'net48'" />
+    <None Include="command.ico">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="command.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="README-Nuget.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
