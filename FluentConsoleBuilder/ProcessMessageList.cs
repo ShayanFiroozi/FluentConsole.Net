@@ -12,8 +12,8 @@
 
 ---------------------------------------------------------------------------------------------*/
 
-using System;
 using FluentConsoleNet.Helpers;
+using System;
 
 namespace FluentConsoleNet
 {

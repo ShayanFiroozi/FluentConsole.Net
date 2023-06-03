@@ -21,7 +21,7 @@ namespace FluentConsoleNet
     {
 
 
-       
+
 
         public FluentConsoleBuilder ClearScreen()
         {
@@ -58,7 +58,7 @@ namespace FluentConsoleNet
         {
             for (int i = 0; i < StringList.Count; i++)
             {
-                if (i < StringList.Count -1)
+                if (i < StringList.Count - 1)
                 {
                     MessageList.Add(StringList[i] + ",");
                 }

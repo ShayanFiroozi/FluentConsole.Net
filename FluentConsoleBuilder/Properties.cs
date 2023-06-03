@@ -19,8 +19,8 @@ namespace FluentConsoleNet
     public sealed partial class FluentConsoleBuilder
     {
 
-        private dynamic Logger = null;
-        private List<string> MessageList = new List<string>();
+        private readonly dynamic Logger = null;
+        private readonly List<string> MessageList = new List<string>();
 
 
     }

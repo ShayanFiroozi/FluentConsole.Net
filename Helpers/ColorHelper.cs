@@ -18,9 +18,9 @@ using System.Linq;
 
 namespace FluentConsoleNet.Helpers
 {
-    internal  static class ColorHelper
+    internal static class ColorHelper
     {
-        private static Dictionary<ConsoleColor, string> ConsoleColors = new Dictionary<ConsoleColor, string>();
+        private static readonly Dictionary<ConsoleColor, string> ConsoleColors = new Dictionary<ConsoleColor, string>();
 
 
         static ColorHelper()

@@ -13,7 +13,6 @@
 ---------------------------------------------------------------------------------------------*/
 
 using System;
-using System.Runtime.CompilerServices;
 
 namespace FluentConsoleNet
 {
@@ -31,7 +30,7 @@ namespace FluentConsoleNet
                 throw new ArgumentNullException(nameof(logger));
             }
 
-          Logger = logger;
+            Logger = logger;
 
         }
 

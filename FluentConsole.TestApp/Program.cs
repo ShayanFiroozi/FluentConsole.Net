@@ -1,6 +1,5 @@
 ﻿using FluentConsoleNet.ConsoleExtension;
 using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace FluentConsoleNet.TestApp
@@ -22,7 +21,7 @@ namespace FluentConsoleNet.TestApp
     internal class Program
     {
 
-        private static FastLogger fastLogger = new FastLogger();
+        private static readonly FastLogger fastLogger = new FastLogger();
 
         static void Main(string[] args)
         {

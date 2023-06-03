@@ -25,7 +25,7 @@ namespace FluentConsoleNet.ConsoleExtension
         }
 
 
-       
+
         public static void WriteOnConsole(this List<string> message)
         {
             FluentConsole.Console.Write(message).Print();
@@ -44,7 +44,7 @@ namespace FluentConsoleNet.ConsoleExtension
         {
             FluentConsole.Console.Write(message).Print();
 
-         
+
         }
 
 

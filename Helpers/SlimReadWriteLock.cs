@@ -20,7 +20,7 @@ namespace FluentConsoleNet.Helpers
 {
     internal static class SlimReadWriteLock
     {
-        internal readonly static ReaderWriterLockSlim Lock = new ReaderWriterLockSlim();
+        internal static readonly ReaderWriterLockSlim Lock = new ReaderWriterLockSlim();
 
 
         internal static void GainReadLock() => Lock.EnterReadLock();

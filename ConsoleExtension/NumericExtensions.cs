@@ -27,7 +27,7 @@ namespace FluentConsoleNet.ConsoleExtension
         public static void PrintOnConsole(this byte number)
         {
             FluentConsole.Console.WriteLine(number.ToString()).Print();
-           
+
         }
 
 
@@ -58,14 +58,14 @@ namespace FluentConsoleNet.ConsoleExtension
         public static void PrintOnConsole(this long number, bool Formatted = false)
         {
             FluentConsole.Console.WriteLine(Formatted ? $"{number:N0}" : number.ToString()).Print();
-           
+
         }
 
 
         public static void PrintOnConsole(this ulong number, bool Formatted = false)
         {
             FluentConsole.Console.WriteLine(Formatted ? $"{number:N0}" : number.ToString()).Print();
-        
+
         }
 
         #endregion
@@ -73,19 +73,19 @@ namespace FluentConsoleNet.ConsoleExtension
 
         #region Floating-point numeric types
 
-        
+
 
         public static void PrintOnConsole(this float number, bool Formatted = false)
         {
             FluentConsole.Console.WriteLine(Formatted ? $"{number:N6}" : number.ToString()).Print();
-            
+
         }
 
 
         public static void PrintOnConsole(this double number, bool Formatted = false)
         {
             FluentConsole.Console.WriteLine(Formatted ? $"{number:N6}" : number.ToString()).Print();
-            
+
         }
 
         public static void PrintOnConsole(this decimal number, bool Formatted = false)
