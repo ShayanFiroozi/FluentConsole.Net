@@ -5,7 +5,7 @@ namespace FluentConsoleNet
     public static class FluentConsole
     {
 
-        public static readonly FluentConsoleBuilder Console = FluentConsoleBuilder.Create();
+        public static FluentConsoleBuilder Console => FluentConsoleBuilder.Create();
 
         public static void AttachLogger(dynamic logger)
         {

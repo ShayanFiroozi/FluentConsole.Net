@@ -29,17 +29,6 @@ namespace FluentConsoleNet.TestApp
         {
             FluentConsole.AttachLogger(fastLogger);
 
-
-            FluentConsole.Console.WithTitle("Shayan Kalak !").WithFontColor(ConsoleColor.Yellow).WriteLine("Firoozi");
-
-            List<int> text = new List<int>() { 50,100,200,300,800,1364 };
-
-            text.WriteLineOnConsole();
-
-            Console.ReadLine();
-
-            return;
-
             while (true)
             {
                 Task.Run(() =>
