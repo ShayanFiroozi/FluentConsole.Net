@@ -25,7 +25,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Working With .Net Console In Elegant Way !")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("TrendSoft® , Bandar Abbas , Iran")]
-[assembly: AssemblyProduct("TrendSoft® Fluent Console")]
+[assembly: AssemblyProduct("TrendSoft® FluentConsole.Net")]
 [assembly: AssemblyCopyright("Copyright © 2023 TrendSoft® (MIT License)")]
 [assembly: AssemblyTrademark("Shayan Firoozi")]
 [assembly: AssemblyCulture("")]
@@ -38,7 +38,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("2F36B712-A6E6-4B9C-AB94-428221550DE6")]
+[assembly: Guid("71B48882-16F9-4779-9C42-E504B2122BD4")]
 
 // Version information for an assembly consists of the following four values:
 //
