@@ -1,15 +1,15 @@
 ﻿namespace FluentConsoleNet
 {
-    public sealed partial class ConsoleBuilder
+    public sealed partial class FluentConsoleBuilder
     {
 
         private string ConvertListToString()
         {
             string result = string.Empty;
 
-            for (int i = 0; i < messageList.Count; i++)
+            for (int i = 0; i < MessageList.Count; i++)
             {
-                result += messageList[i];
+                result += MessageList[i];
             }
 
             return result;

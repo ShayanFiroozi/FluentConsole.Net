@@ -3,7 +3,7 @@ using FluentConsoleNet.Helpers;
 
 namespace FluentConsoleNet
 {
-    public sealed partial class ConsoleBuilder
+    public sealed partial class FluentConsoleBuilder
     {
 
 
@@ -11,7 +11,7 @@ namespace FluentConsoleNet
         {
             try
             {
-                foreach (string message in messageList)
+                foreach (string message in MessageList)
                 {
 
                     if (message.Length == 0)
@@ -39,7 +39,7 @@ namespace FluentConsoleNet
                         continue;
                     }
 
-
+                    // Process Fore and Back Colors
                     if (message.Length > (FontColorSign.Length + CommandSign.Length))
                     {
 
@@ -80,6 +80,30 @@ namespace FluentConsoleNet
 
 
 
+                    //Process Console Title
+
+                    if (message.Length > (ConsoleTitleSign.Length + CommandSign.Length))
+                    {
+
+                        if (message.Substring(0, ConsoleTitleSign.Length) == ConsoleTitleSign &&
+                           message.Substring(message.Length - CommandSign.Length, CommandSign.Length) == CommandSign)
+                        {
+
+                            string title = message.Substring(FontColorSign.Length, message.Length - (FontColorSign.Length + CommandSign.Length));
+
+                            if (string.IsNullOrEmpty(title))
+                            {
+                                continue;
+                            }
+
+                            Console.Title = title;
+                            continue;
+
+                        }
+                    }
+
+
+
                     Console.Write(message);
                     Console.ResetColor();
 
@@ -90,7 +114,7 @@ namespace FluentConsoleNet
             catch
             {
                 Console.ResetColor();
-                
+
             }
 
         }
