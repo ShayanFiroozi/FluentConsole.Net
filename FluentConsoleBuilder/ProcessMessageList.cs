@@ -11,6 +11,9 @@ namespace FluentConsoleNet
 
             try
             {
+                // Gain The Write Lock
+                SlimReadWriteLock.GainWriteLock();
+
                 foreach (string message in MessageList)
                 {
 
@@ -114,7 +117,12 @@ namespace FluentConsoleNet
             catch
             {
                 Console.ResetColor();
+            }
 
+            finally
+            {
+                // Release The Write Lock
+                SlimReadWriteLock.RelaseWriteLock();
             }
 
         }

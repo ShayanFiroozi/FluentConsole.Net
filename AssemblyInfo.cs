@@ -1,6 +1,6 @@
 ﻿/*---------------------------------------------------------------------------------------------
 
-                ► Console.Net , Helper Library For .Net Console ◄
+            ► FluentConsole.Net , Working With .Net Console In Elegant Way ! ◄
 
 
 
@@ -8,7 +8,7 @@
 
  → Contact : <shayan.firoozi@gmail.com>
 
- → GitHub repository : https://github.com/ShayanFiroozi/FastLog.Net
+ → GitHub repository : https://github.com/ShayanFiroozi/FluentConsole.Net
 
 ---------------------------------------------------------------------------------------------*/
 
@@ -22,7 +22,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Fluent Console For .Net")]
-[assembly: AssemblyDescription("Working with .Net Console in elegant way !")]
+[assembly: AssemblyDescription("Working With .Net Console In Elegant Way !")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("TrendSoft® , Bandar Abbas , Iran")]
 [assembly: AssemblyProduct("TrendSoft® Fluent Console")]

@@ -31,19 +31,25 @@ namespace FluentConsoleNet.TestApp
 
             while (true)
             {
-                //Task.Run(() =>
-                //{
-                //    FluentConsole.Console
-                //              .WithFontColor(ConsoleColor.Yellow)
-                //              .WithBackColor(ConsoleColor.DarkGray)
-                //                .Write(DateTime.Now.ToString())
-                //                .AddSpace(1)
+                Task.Run(() =>
+                {
+                    FluentConsole.Console
+                              .WithFontColor(ConsoleColor.Yellow)
+                              .WithBackColor(ConsoleColor.DarkGray)
+                                .Write(DateTime.Now.ToString())
+                                .AddSpace(1)
 
-                //              .WriteLine("Shayan Firoozi")
-                //              .AddCharacter('*', 20)
-                //              .AddBreakLine(5).Print();
-                  
-                //});
+                              .WriteLine("Shayan Firoozi")
+                              .AddCharacter('*', 20)
+                              .AddBreakLine(5).Print();
+
+
+
+
+                    1364.PrintOnConsole(true);
+                    true.PrintOnConsole();
+
+                });
 
 
                 FluentConsole.Console
