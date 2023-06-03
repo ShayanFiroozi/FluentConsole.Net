@@ -22,6 +22,31 @@ namespace FluentConsoleNet
             return new ConsoleBuilder();
         }
 
+
+        public ConsoleBuilder ClearScreen()
+        {
+            messageList.Add(ClearScreenSign);
+            return this;
+        }
+
+
+        public string ReadLine()
+        {
+            return Console.ReadLine();
+        }
+
+        public ConsoleKeyInfo ReadKey()
+        {
+            return Console.ReadKey();
+        }
+
+
+        public ConsoleBuilder Beep()
+        {
+            messageList.Add(BeepSign);
+            return this;
+        }
+
         public ConsoleBuilder Write(string text)
         {
             messageList.Add(text);
@@ -39,10 +64,41 @@ namespace FluentConsoleNet
 
 
 
+        public ConsoleBuilder AddSpace(int SpaceCount)
+        {
+            messageList.Add(new string(' ', SpaceCount));
+
+            return this;
+        }
+
+
+        public ConsoleBuilder AddCharacter(char character ,  int CharacterCount)
+        {
+            messageList.Add(new string(character, CharacterCount));
+
+            return this;
+        }
+
+        public ConsoleBuilder AddBreakLine(int BreakLineCount)
+        {
+
+            for (int i = 0; i < BreakLineCount; i++)
+            {
+                messageList.Add(Environment.NewLine);
+            }
+
+            
+
+            return this;
+        }
+
+
+
+
         public ConsoleBuilder WithFontColor(ConsoleColor color)
         {
 
-            messageList.Add($"[/]{color}[/]");
+            messageList.Add($"{FontColorSign}{color}{CommandSign}");
 
             return this;
         }
@@ -51,7 +107,7 @@ namespace FluentConsoleNet
         public ConsoleBuilder WithBackColor(ConsoleColor color)
         {
 
-            messageList.Add($"bg[/]{color}bg[/]");
+            messageList.Add($"{BackColorSign}{color}{CommandSign}");
 
 
             return this;

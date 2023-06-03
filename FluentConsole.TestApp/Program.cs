@@ -25,16 +25,33 @@ namespace FluentConsoleNet.TestApp
 
         static void Main(string[] args)
         {
-            ConsoleHelper.AttachLogger(fastLogger);
+            FluentConsole.AttachLogger(fastLogger);
 
-            ConsoleHelper.Console
-                          .WithFontColor(ConsoleColor.Yellow)
-                          .WithBackColor(ConsoleColor.DarkGray)
-                            .WriteLine(DateTime.Now.ToString())
 
-                          .WriteLine("Shayan Firoozi")
+            while (true)
+            {
+                FluentConsole.Console
+                            .WithFontColor(ConsoleColor.Yellow)
+                            .WithBackColor(ConsoleColor.DarkGray)
+                              .Write(DateTime.Now.ToString())
+                              .AddSpace(1)
 
-                          .Print();
+                            .WriteLine("Shayan Firoozi")
+                            .AddCharacter('*', 20)
+                            .AddBreakLine(5)
+                            
+
+                            .Print();
+
+              
+                Task.Delay(1).GetAwaiter().GetResult();
+
+
+
+            }
+
+
+
 
             Console.WriteLine("Finished.");
 

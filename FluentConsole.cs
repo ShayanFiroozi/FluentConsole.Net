@@ -2,7 +2,7 @@
 
 namespace FluentConsoleNet
 {
-    public static class ConsoleHelper
+    public static class FluentConsole
     {
 
         public static readonly ConsoleBuilder Console = ConsoleBuilder.Create();
