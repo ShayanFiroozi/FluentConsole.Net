@@ -6,9 +6,9 @@ namespace FluentConsoleNet
     public sealed partial class FluentConsoleBuilder
     {
 
-
         private void ProcessMessageList()
         {
+
             try
             {
                 foreach (string message in MessageList)
@@ -118,6 +118,10 @@ namespace FluentConsoleNet
             }
 
         }
+
+
+
+
 
 
 

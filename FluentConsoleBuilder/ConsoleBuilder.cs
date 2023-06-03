@@ -7,7 +7,7 @@ namespace FluentConsoleNet
     {
 
         private dynamic Logger = null;
-        private readonly List<string> MessageList = new List<string>();
+        private List<string> MessageList = new List<string>();
 
         internal void AttachLogger(dynamic logger)
         {
