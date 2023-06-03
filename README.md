@@ -42,7 +42,7 @@ The srouce code is fully commented.
               .Print();
  ```   
 
- - Example 2 with  [**FastLog.Net**](https://github.com/ShayanFiroozi/FastLog.Net) :  
+ - Another Example with  [**FastLog.Net**](https://github.com/ShayanFiroozi/FastLog.Net) high performance logger :  
 
 
  ```csharp
