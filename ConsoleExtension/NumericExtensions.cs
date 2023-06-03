@@ -33,38 +33,80 @@ namespace FluentConsoleNet.ConsoleExtension
 
         public static void PrintOnConsole(this short number, bool Formatted = false)
         {
-            FluentConsole.Console.WriteLine(Formatted ? $"{number:N0}" : number.ToString()).Print();
+            if (Formatted)
+            {
+                FluentConsole.Console.WriteLine($"{number:N0}").Print();
+            }
+            else
+            {
+                FluentConsole.Console.WriteLine(number.ToString()).Print();
+            }
         }
 
 
         public static void PrintOnConsole(this ushort number, bool Formatted = false)
         {
-            FluentConsole.Console.WriteLine(Formatted ? $"{number:N0}" : number.ToString()).Print();
+            if (Formatted)
+            {
+                FluentConsole.Console.WriteLine($"{number:N0}").Print();
+            }
+            else
+            {
+                FluentConsole.Console.WriteLine(number.ToString()).Print();
+            }
         }
 
 
         public static void PrintOnConsole(this int number, bool Formatted = false)
         {
-            FluentConsole.Console.WriteLine(Formatted ? $"{number:N0}" : number.ToString()).Print();
+            if (Formatted)
+            {
+                FluentConsole.Console.WriteLine($"{number:N0}").Print();
+            }
+            else
+            {
+                FluentConsole.Console.WriteLine(number.ToString()).Print();
+            }
         }
 
 
         public static void PrintOnConsole(this uint number, bool Formatted = false)
         {
-            FluentConsole.Console.WriteLine(Formatted ? $"{number:N0}" : number.ToString()).Print();
+            if (Formatted)
+            {
+                FluentConsole.Console.WriteLine($"{number:N0}").Print();
+            }
+            else
+            {
+                FluentConsole.Console.WriteLine(number.ToString()).Print();
+            }
         }
 
 
         public static void PrintOnConsole(this long number, bool Formatted = false)
         {
-            FluentConsole.Console.WriteLine(Formatted ? $"{number:N0}" : number.ToString()).Print();
+            if (Formatted)
+            {
+                FluentConsole.Console.WriteLine($"{number:N0}").Print();
+            }
+            else
+            {
+                FluentConsole.Console.WriteLine(number.ToString()).Print();
+            }
 
         }
 
 
         public static void PrintOnConsole(this ulong number, bool Formatted = false)
         {
-            FluentConsole.Console.WriteLine(Formatted ? $"{number:N0}" : number.ToString()).Print();
+            if (Formatted)
+            {
+                FluentConsole.Console.WriteLine($"{number:N0}").Print();
+            }
+            else
+            {
+                FluentConsole.Console.WriteLine(number.ToString()).Print();
+            }
 
         }
 
@@ -77,20 +119,41 @@ namespace FluentConsoleNet.ConsoleExtension
 
         public static void PrintOnConsole(this float number, bool Formatted = false)
         {
-            FluentConsole.Console.WriteLine(Formatted ? $"{number:N6}" : number.ToString()).Print();
+            if (Formatted)
+            {
+                FluentConsole.Console.WriteLine($"{number:N6}").Print();
+            }
+            else
+            {
+                FluentConsole.Console.WriteLine(number.ToString()).Print();
+            }
 
         }
 
 
         public static void PrintOnConsole(this double number, bool Formatted = false)
         {
-            FluentConsole.Console.WriteLine(Formatted ? $"{number:N6}" : number.ToString()).Print();
+            if (Formatted)
+            {
+                FluentConsole.Console.WriteLine($"{number:N6}").Print();
+            }
+            else
+            {
+                FluentConsole.Console.WriteLine(number.ToString()).Print();
+            }
 
         }
 
         public static void PrintOnConsole(this decimal number, bool Formatted = false)
         {
-            FluentConsole.Console.WriteLine(Formatted ? $"{number:N6}" : number.ToString()).Print();
+            if (Formatted)
+            {
+                FluentConsole.Console.WriteLine($"{number:N6}").Print();
+            }
+            else
+            {
+                FluentConsole.Console.WriteLine(number.ToString()).Print();
+            }
         }
 
 

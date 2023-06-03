@@ -60,11 +60,16 @@ namespace FluentConsoleNet.TestApp
 
                     greatest.PrintLineOnConsole();
 
-               
+
 
                 });
 
                 Task.Delay(1).GetAwaiter().GetResult();
+
+                if (Console.KeyAvailable)
+                {
+                    return;
+                }
             }
 
 

@@ -19,7 +19,14 @@ namespace FluentConsoleNet.ConsoleExtension
 
         public static void PrintOnConsole(this bool boolean, bool YesNoFormat = false)
         {
-            FluentConsole.Console.WriteLine(YesNoFormat ? (boolean ? "Yes" : "No") : boolean.ToString()).Print();
+            if (boolean)
+            {
+                FluentConsole.Console.WriteLine(YesNoFormat ? ("Yes") : boolean.ToString()).Print();
+            }
+            else
+            {
+                FluentConsole.Console.WriteLine(YesNoFormat ? ("No") : boolean.ToString()).Print();
+            }
 
         }
 
