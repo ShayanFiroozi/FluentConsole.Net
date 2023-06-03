@@ -20,8 +20,6 @@
 ## 🤝Contributions
 Since this is a new repository , there's no contributor yet! , But **FluentConsole.Net** welcomes and appreciates any contribution , pull request or bug report.
  
-> **Note**:  
-The srouce code is fully commented.
 
 <br/>
  
