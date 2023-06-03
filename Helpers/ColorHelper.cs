@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace FluentConsole.Net.Helpers
+namespace FluentConsoleNet.Helpers
 {
     internal static class ColorHelper
     {

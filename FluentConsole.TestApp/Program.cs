@@ -28,14 +28,17 @@ namespace FluentConsoleNet.TestApp
             ConsoleHelper.AttachLogger(fastLogger);
 
             ConsoleHelper.Console
-                          .Write(DateTime.Now.ToString()).WithFontColor(ConsoleColor.Green).WithBackColor(ConsoleColor.Red)
-                          .Write(" Shayan")
-                          .WriteLine(" Firoozi").WithFontColor(ConsoleColor.Blue)
-                          .WriteLine("1402")
-                          .WithFontColor(ConsoleColor.Red)
+                          .WithFontColor(ConsoleColor.Yellow)
+                          .WithBackColor(ConsoleColor.DarkGray)
+                            .WriteLine(DateTime.Now.ToString())
+
+                          .WriteLine("Shayan Firoozi")
+
                           .Print();
 
             Console.WriteLine("Finished.");
+
+            Console.ReadLine();
         }
     }
 
