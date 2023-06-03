@@ -7,6 +7,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentConsole.Net", "Fluent
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentConsole.TestApp", "FluentConsole.TestApp\FluentConsole.TestApp.csproj", "{44DF79FA-6FD3-40F6-AC40-935BE125921C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2CCED497-4227-4F34-906F-2E3D55802200}"
+	ProjectSection(SolutionItems) = preProject
+		CHANGELOG.md = CHANGELOG.md
+		DONATIONS.md = DONATIONS.md
+		LICENSE.md = LICENSE.md
+		ToDo.md = ToDo.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

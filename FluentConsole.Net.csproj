@@ -17,6 +17,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="CHANGELOG.md" />
+    <None Remove="DONATIONS.md" />
+    <None Remove="LICENSE.md" />
+    <None Remove="README-Nuget.md" />
+    <None Remove="README.md" />
+    <None Remove="ToDo.md" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" Condition="'$(TargetFramework)' == 'net48'" />
   </ItemGroup>
 
