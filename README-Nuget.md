@@ -1,3 +1,13 @@
+[![Nuget](https://img.shields.io/nuget/v/FluentConsole.Net)](https://www.nuget.org/packages/FluentConsole.Net/#readme-body-tab)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=ShayanFiroozi_FluentConsole.Net&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=ShayanFiroozi_FluentConsole.Net)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ShayanFiroozi_FluentConsole.Net&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ShayanFiroozi_FluentConsole.Net)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ShayanFiroozi_FluentConsole.Net&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=ShayanFiroozi_FluentConsole.Net)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=ShayanFiroozi_FluentConsole.Net&metric=bugs)](https://sonarcloud.io/summary/new_code?id=ShayanFiroozi_FluentConsole.Net)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=ShayanFiroozi_FluentConsole.Net&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=ShayanFiroozi_FluentConsole.Net)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=ShayanFiroozi_FluentConsole.Net&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=ShayanFiroozi_FluentConsole.Net)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=ShayanFiroozi_FluentConsole.Net&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=ShayanFiroozi_FluentConsole.Net)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ShayanFiroozi_FluentConsole.Net&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=ShayanFiroozi_FluentConsole.Net)
+
 # FluentConsole.Net
 
 Using .Net **Console** In Elegant Way ! 
