@@ -4,7 +4,7 @@
 
 # FluentConsole.Net
 
-**FluentConsole.Net** Using .Net **Console** In Elegant Way ! 
+Using .Net **Console** In Elegant Way ! 
  
 ✔ Easy to use and develop , clean code , and also designed to be fully thread-safe.  
  
