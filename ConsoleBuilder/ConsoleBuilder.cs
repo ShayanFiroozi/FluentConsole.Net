@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace FluentConsoleNet
 {
-    public partial class ConsoleBuilder
+    public sealed partial class ConsoleBuilder
     {
 
         private dynamic Logger = null;

@@ -30,20 +30,23 @@ namespace FluentConsoleNet.TestApp
 
             while (true)
             {
-                FluentConsole.Console
-                            .WithFontColor(ConsoleColor.Yellow)
-                            .WithBackColor(ConsoleColor.DarkGray)
-                              .Write(DateTime.Now.ToString())
-                              .AddSpace(1)
+                Task.Run(() =>
+                {
+                    FluentConsole.Console
+                              .WithFontColor(ConsoleColor.Yellow)
+                              .WithBackColor(ConsoleColor.DarkGray)
+                                .Write(DateTime.Now.ToString())
+                                .AddSpace(1)
 
-                            .WriteLine("Shayan Firoozi")
-                            .AddCharacter('*', 20)
-                            .AddBreakLine(5)
-                            
+                              .WriteLine("Shayan Firoozi")
+                              .AddCharacter('*', 20)
+                              .AddBreakLine(5)
 
-                            .Print();
 
-              
+                              .Print();
+                });
+
+
                 Task.Delay(1).GetAwaiter().GetResult();
 
 

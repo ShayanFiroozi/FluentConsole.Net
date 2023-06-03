@@ -3,7 +3,7 @@ using FluentConsoleNet.Helpers;
 
 namespace FluentConsoleNet
 {
-    public partial class ConsoleBuilder
+    public sealed partial class ConsoleBuilder
     {
 
 
