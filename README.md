@@ -2,7 +2,7 @@
  <img src="https://github.com/ShayanFiroozi/FluentConsole.Net/blob/master/command.ico"
 </p>
 
- [![Nuget](https://img.shields.io/nuget/v/FastLog.Net)](https://www.nuget.org/packages/FluentConsole.Net/#readme-body-tab)
+ [![Nuget](https://img.shields.io/nuget/v/FluentConsole.Net)](https://www.nuget.org/packages/FluentConsole.Net/#readme-body-tab)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=ShayanFiroozi_FluentConsole.Net&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=ShayanFiroozi_FluentConsole.Net)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ShayanFiroozi_FluentConsole.Net&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ShayanFiroozi_FluentConsole.Net)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ShayanFiroozi_FluentConsole.Net&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=ShayanFiroozi_FluentConsole.Net)
