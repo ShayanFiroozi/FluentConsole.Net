@@ -55,44 +55,16 @@ namespace FluentConsoleNet.TestApp
                              .AddCharacter('*', 20)
                              .AddLineBreak(5).PrintAndLog();
 
-
-
-
-                    1364.PrintOnConsole(Formatted: true);
-                    true.PrintOnConsole(YesNoFormat: true);
-
-
+                    // Bugs here ... seems to be not thread-safe !!!
                     List<string> greatest = new List<string>() { "David Gilmour", "Soe Satriani", "Stevie Ray Vaughan", "Slash !", "Paul Mccartney" };
 
                     greatest.PrintLineOnConsole();
 
+               
+
                 });
 
-
-                FluentConsole.Console
-                 .WithFontColor(ConsoleColor.Yellow)
-                 .WithBackColor(ConsoleColor.DarkGray)
-                   .Write(DateTime.Now.ToString())
-                   .AddSpace(1)
-
-                 .WriteLine("Ajibe !!!")
-                 .PrintAndLog();
-
-                1364.PrintOnConsole(true);
-                true.PrintOnConsole();
-
                 Task.Delay(1).GetAwaiter().GetResult();
-
-                FluentConsole.Console
-                    .WithTitle("This is the Fluent Console For .Net")
-                    .WithFontColor(ConsoleColor.Yellow)
-                    .AddLine(LineWidth: 20)
-                    .Write("Who wants to live forever ?!")
-                    .Beep()
-                    .PrintAndLog();
-
-
-
             }
 
 
