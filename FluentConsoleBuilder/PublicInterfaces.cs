@@ -195,17 +195,9 @@ namespace FluentConsoleNet
 
         public FluentConsoleBuilder Print()
         {
-            try
-            {
 
-                ProcessMessageList();
+            _ = PrintOnConsole();
 
-            }
-            finally
-            {
-                MessageList.Clear();
-                Console.ResetColor();
-            }
             return this;
         }
 
@@ -214,15 +206,31 @@ namespace FluentConsoleNet
         public FluentConsoleBuilder PrintAndLog()
         {
 
-            string logMessage = ConvertListToString();
+
+            string dataToLog = PrintOnConsole();
 
             Print();
 
-            Logger?.LogConsole(logMessage);
+            Logger?.LogConsole(dataToLog);
 
             return this;
         }
 
+
+        private string PrintOnConsole()
+        {
+            try
+            {
+
+                return ProcessMessageList();
+
+            }
+            finally
+            {
+                MessageList.Clear();
+                Console.ResetColor();
+            }
+        }
 
 
     }

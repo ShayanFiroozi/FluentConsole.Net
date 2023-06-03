@@ -20,8 +20,10 @@ namespace FluentConsoleNet
     public sealed partial class FluentConsoleBuilder
     {
 
-        private void ProcessMessageList()
+        private string ProcessMessageList()
         {
+
+            string totalText = string.Empty;
 
             try
             {
@@ -120,17 +122,20 @@ namespace FluentConsoleNet
                     }
 
 
-
+                    totalText += message;
                     Console.Write(message);
                     Console.ResetColor();
 
 
 
                 }
+
+                return totalText;
             }
             catch
             {
                 Console.ResetColor();
+                return string.Empty;
             }
 
             finally
