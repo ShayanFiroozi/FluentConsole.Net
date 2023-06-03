@@ -5,6 +5,8 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Deterministic>false</Deterministic>
     <PlatformTarget>AnyCPU</PlatformTarget>
+    <ApplicationIcon>command.ico</ApplicationIcon>
+    <PackageIcon>command.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,6 +25,17 @@
     <None Remove="README-Nuget.md" />
     <None Remove="README.md" />
     <None Remove="ToDo.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="command.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\_Resources_\Icons\command.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
