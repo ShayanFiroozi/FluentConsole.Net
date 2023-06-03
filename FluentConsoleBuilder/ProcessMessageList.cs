@@ -89,7 +89,7 @@ namespace FluentConsoleNet
                            message.Substring(message.Length - CommandSign.Length, CommandSign.Length) == CommandSign)
                         {
 
-                            string title = message.Substring(FontColorSign.Length, message.Length - (FontColorSign.Length + CommandSign.Length));
+                            string title = message.Substring(ConsoleTitleSign.Length, message.Length - (ConsoleTitleSign.Length + CommandSign.Length));
 
                             if (string.IsNullOrEmpty(title))
                             {
