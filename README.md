@@ -10,9 +10,9 @@ Using .Net **Console** In Elegant Way !
  
 ✔ FluentConsole.Net uses fluent builder pattern.  
  
-✔ FluentConsole.Net fluent extension methods to write directly on **Console**.
+✔ FluentConsole.Net has fluent extension methods to write directly on **Console**.
 
-✔ FluentConsole.Net is able to use [**FastLog.Net**](https://github.com/ShayanFiroozi/FastLog.Net) logger to also log the data when priting on the **Console**.  
+✔ FluentConsole.Net is able to use [**FastLog.Net**](https://github.com/ShayanFiroozi/FastLog.Net) logger to also log the data when printing on the **Console**.  
 
 
 <br/>
@@ -40,7 +40,7 @@ Since this is a new repository , there's no contributor yet! , But **FluentConso
               .Print();
  ```   
 
- - Another Example with  [**FastLog.Net**](https://github.com/ShayanFiroozi/FastLog.Net) high performance logger :  
+ - Another Example with  [**FastLog.Net**](https://github.com/ShayanFiroozi/FastLog.Net) , high performance logger :  
 
 
  ```csharp
