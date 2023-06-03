@@ -43,6 +43,18 @@ namespace FluentConsoleNet.TestApp
                               .AddCharacter('*', 20)
                               .AddBreakLine(5).Print();
 
+                    FluentConsole.Console.AddBreakLine(5).Print();
+
+                    FluentConsole.Console
+                             .WithFontColor(ConsoleColor.Yellow)
+                             .WithBackColor(ConsoleColor.DarkGray)
+                               .Write(DateTime.Now.ToString())
+                               .AddSpace(1)
+
+                             .WriteLine("Shayan Firoozi")
+                             .AddCharacter('*', 20)
+                             .AddBreakLine(5).Print();
+
 
 
 

@@ -20,22 +20,8 @@ namespace FluentConsoleNet
     public sealed partial class FluentConsoleBuilder
     {
 
-        private dynamic Logger = null;
-        private List<string> MessageList = new List<string>();
 
-        internal void AttachLogger(dynamic logger)
-        {
-            Logger = logger ?? throw new ArgumentNullException(nameof(logger));
-        }
-
-        private FluentConsoleBuilder() { }
-
-
-        public static FluentConsoleBuilder Create()
-        {
-            return new FluentConsoleBuilder();
-        }
-
+       
 
         public FluentConsoleBuilder ClearScreen()
         {
