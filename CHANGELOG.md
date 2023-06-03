@@ -3,4 +3,5 @@
 
 ## ✔ 1.0 ( 2023-06-03 )
   * Change log created !
+  * Fix Logger bug.
  

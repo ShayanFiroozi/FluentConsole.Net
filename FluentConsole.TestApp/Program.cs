@@ -53,7 +53,7 @@ namespace FluentConsoleNet.TestApp
 
                              .WriteLine("Shayan Firoozi")
                              .AddCharacter('*', 20)
-                             .AddBreakLine(5).Print();
+                             .AddBreakLine(5).PrintAndLog();
 
 
 

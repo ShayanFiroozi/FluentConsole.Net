@@ -20,12 +20,15 @@ namespace FluentConsoleNet
     public sealed partial class FluentConsoleBuilder
     {
 
-        private FluentConsoleBuilder() { }
-
-
-        public static FluentConsoleBuilder Create()
+        private FluentConsoleBuilder(dynamic Logger)
         {
-            return new FluentConsoleBuilder();
+            this.Logger = Logger;
+        }
+
+
+        public static FluentConsoleBuilder Create(dynamic Logger)
+        {
+            return new FluentConsoleBuilder(Logger);
         }
 
 

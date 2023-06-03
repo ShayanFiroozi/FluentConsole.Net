@@ -13,13 +13,15 @@
 ---------------------------------------------------------------------------------------------*/
 
 using System;
+using System.Runtime.CompilerServices;
 
 namespace FluentConsoleNet
 {
     public static class FluentConsole
     {
+        private static dynamic Logger = null;
 
-        public static FluentConsoleBuilder Console => FluentConsoleBuilder.Create();
+        public static FluentConsoleBuilder Console => FluentConsoleBuilder.Create(Logger);
 
 
         public static void AttachLogger(dynamic logger)
@@ -29,7 +31,7 @@ namespace FluentConsoleNet
                 throw new ArgumentNullException(nameof(logger));
             }
 
-            Console.AttachLogger(logger);
+          Logger = logger;
 
         }
 

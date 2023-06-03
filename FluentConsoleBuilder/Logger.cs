@@ -22,12 +22,7 @@ namespace FluentConsoleNet
 
      
 
-        internal void AttachLogger(dynamic logger)
-        {
-            Logger = logger ?? throw new ArgumentNullException(nameof(logger));
-        }
-
-      
+       
 
 
     }
