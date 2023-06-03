@@ -1,5 +1,5 @@
 <p align="center">
- <img src="https://github.com/ShayanFiroozi/FastLog.Net/blob/master/FastLog.Net/Icon/FastLogNet.ico"
+ <img src="https://github.com/ShayanFiroozi/FluentConsole.Net/blob/master/command.ico"
 </p>
 
 # FluentConsole.Net
