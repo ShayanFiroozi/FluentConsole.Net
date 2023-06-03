@@ -1,5 +1,6 @@
 ﻿using FluentConsoleNet.ConsoleExtension;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace FluentConsoleNet.TestApp
@@ -57,8 +58,13 @@ namespace FluentConsoleNet.TestApp
 
 
 
-                    1364.PrintOnConsole(true);
-                    true.PrintOnConsole();
+                    1364.PrintOnConsole(Formatted: true);
+                    true.PrintOnConsole(YesNoFormat: true);
+
+
+                    List<string> greatest = new List<string>() { "David Gilmour", "Soe Satriani", "Stevie Ray Vaughan", "Slash !", "Paul Mccartney" };
+
+                    greatest.PrintLineOnConsole();
 
                 });
 
