@@ -5,4 +5,7 @@
   * Change log created !
   * Fix Logger bug.
   * Fix string logging.
+
+## ✔ 1.0 ( 2023-06-04 )
+  * Improve performance.
  

@@ -21,11 +21,25 @@ namespace FluentConsoleNet.ConsoleExtension
         {
             if (boolean)
             {
-                FluentConsole.Console.WriteLine(YesNoFormat ? ("Yes") : boolean.ToString()).Print();
+                if (YesNoFormat)
+                {
+                    FluentConsole.Console.WriteLine("Yes").Print();
+                }
+                else
+                {
+                    FluentConsole.Console.WriteLine(boolean.ToString()).Print();
+                }
             }
             else
             {
-                FluentConsole.Console.WriteLine(YesNoFormat ? ("No") : boolean.ToString()).Print();
+                if (YesNoFormat)
+                {
+                    FluentConsole.Console.WriteLine("No").Print();
+                }
+                else
+                {
+                    FluentConsole.Console.WriteLine(boolean.ToString()).Print();
+                }
             }
 
         }
