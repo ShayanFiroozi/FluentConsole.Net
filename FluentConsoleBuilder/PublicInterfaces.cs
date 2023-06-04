@@ -145,12 +145,34 @@ namespace FluentConsoleNet
             return this;
         }
 
-        public FluentConsoleBuilder AddLineBreak(int BreakLineCount)
+        public FluentConsoleBuilder AddLineBreak(int BreakLineCount = 1)
         {
 
             for (int i = 0; i < BreakLineCount; i++)
             {
                 MessageList.Add(Environment.NewLine);
+            }
+
+
+
+            return this;
+        }
+
+
+
+        public FluentConsoleBuilder WriteNumberRange(int from, int to, bool formatted)
+        {
+
+            for (int i = from; i <= to; i++)
+            {
+                if (formatted)
+                {
+                    MessageList.Add($"{i:N0}");
+                }
+                else
+                {
+                    MessageList.Add(i.ToString());
+                }
             }
 
 
