@@ -160,22 +160,60 @@ namespace FluentConsoleNet
 
 
 
-        public FluentConsoleBuilder WriteNumberRange(int from, int to, bool formatted)
+        public FluentConsoleBuilder WriteNumberRange(int from, int to, bool formatted = false)
         {
 
             for (int i = from; i <= to; i++)
             {
+                string number;
+
                 if (formatted)
                 {
-                    MessageList.Add($"{i:N0}");
+                    number = $"{i:N0}";
                 }
                 else
                 {
-                    MessageList.Add(i.ToString());
+                    number = i.ToString();
                 }
+
+
+                if (i != to)
+                {
+                    MessageList.Add(number + ",");
+                }
+                else
+                {
+                    MessageList.Add(number);
+                }
+
             }
 
+            return this;
+        }
 
+
+
+
+
+        public FluentConsoleBuilder WriteLineNumberRange(int from, int to, bool formatted = false)
+        {
+
+            for (int i = from; i <= to; i++)
+            {
+
+
+                if (formatted)
+                {
+                    MessageList.Add($"{i:N0}" + Environment.NewLine);
+                }
+                else
+                {
+                    MessageList.Add(i.ToString() + Environment.NewLine);
+                }
+
+
+
+            }
 
             return this;
         }

@@ -6,6 +6,7 @@
   * Fix Logger bug.
   * Fix string logging.
 
-## ✔ 1.0 ( 2023-06-04 )
+## ✔ 1.0.8555 ( 2023-06-04 )
   * Improve performance.
+  * Add Write/WriteLineNumberRange() method.
  

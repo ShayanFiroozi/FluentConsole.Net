@@ -52,7 +52,7 @@ namespace FluentConsoleNet.TestApp
                                .AddSpace(1)
 
                              .WriteLine("Shayan Firoozi")
-                             .AddCharacter('*', 20)
+                             .AddCharacter('*', 20).WriteLineNumberRange(1,10)
                              .AddLineBreak(5).PrintAndLog();
 
                     // Bugs here ... seems to be not thread-safe !!!
