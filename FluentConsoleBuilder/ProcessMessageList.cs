@@ -128,7 +128,7 @@ namespace FluentConsoleNet
 
                     totalText.Append(message);
                     Console.Write(message);
-                    Console.ResetColor();
+
 
 
 
@@ -138,12 +138,14 @@ namespace FluentConsoleNet
             }
             catch
             {
-                Console.ResetColor();
+
                 return string.Empty;
             }
 
             finally
             {
+                Console.ResetColor();
+
                 // Release The Write Lock
                 SlimReadWriteLock.RelaseWriteLock();
             }
