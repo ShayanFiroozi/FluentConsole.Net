@@ -47,6 +47,13 @@ namespace FluentConsoleNet
             return this;
         }
 
+
+        public FluentConsoleBuilder ResetColor()
+        {
+            MessageList.Add(ResetColorsSign);
+            return this;
+        }
+
         public FluentConsoleBuilder Write(string text)
         {
             MessageList.Add(text);
@@ -253,27 +260,21 @@ namespace FluentConsoleNet
         }
 
 
-        public FluentConsoleBuilder Print()
+        public void Print()
         {
-
             _ = PrintOnConsole();
 
-            return this;
         }
 
 
 
-        public FluentConsoleBuilder PrintAndLog()
+        public void PrintAndLog()
         {
-
-
             string dataToLog = PrintOnConsole();
 
             Print();
 
             Logger?.LogConsole(dataToLog);
-
-            return this;
         }
 
 

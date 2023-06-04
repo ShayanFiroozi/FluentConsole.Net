@@ -24,6 +24,7 @@ namespace FluentConsoleNet
         private const string ConsoleTitleSign = "consoletitle" + CommandSign;
         private const string ClearScreenSign = CommandSign + "clearscreen" + CommandSign;
         private const string BeepSign = CommandSign + "beep" + CommandSign;
+        private const string ResetColorsSign = CommandSign + "resetcolors" + CommandSign;
 
 
     }

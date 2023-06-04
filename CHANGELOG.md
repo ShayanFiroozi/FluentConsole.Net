@@ -8,5 +8,7 @@
 
 ## ✔ 1.0.8555 ( 2023-06-04 )
   * Improve performance.
-  * Add Write/WriteLineNumberRange() method.
+  * Add "Write/WriteLineNumberRange" method.
+  * Add "ResetColor" method.
+  * Change "Print" method type to void.
  

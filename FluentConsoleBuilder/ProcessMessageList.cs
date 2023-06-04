@@ -53,6 +53,13 @@ namespace FluentConsoleNet
                         continue;
                     }
 
+
+                    if (message == ResetColorsSign)
+                    {
+                        Console.ResetColor();
+                        continue;
+                    }
+
                     if (message == Environment.NewLine)
                     {
                         Console.WriteLine();
