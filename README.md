@@ -11,7 +11,7 @@
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=ShayanFiroozi_FluentConsole.Net&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=ShayanFiroozi_FluentConsole.Net)
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=ShayanFiroozi_FluentConsole.Net&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=ShayanFiroozi_FluentConsole.Net)
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ShayanFiroozi_FluentConsole.Net&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=ShayanFiroozi_FluentConsole.Net)
-[![License](https://img.shields.io/github/license/shayanfiroozi/fluentconsole.net)](https://img.shields.io/github/license/shayanfiroozi/fluentconsole.net)
+[![License](https://img.shields.io/github/license/shayanfiroozi/fluentconsole.net)](https://github.com/ShayanFiroozi/FluentConsole.Net/blob/master/LICENSE.md)
  
 # FluentConsole.Net
 
