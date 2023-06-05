@@ -68,11 +68,18 @@ List<string> greatest = new List<string>() { "David Gilmour", "Joe Satriani", "S
 greatest.WriteLineOnConsole();
 
 
- // Printing your exception object as easy as hell !
+ // Printing your Exception object as easy as hell !
 
  new InvalidOperationException("This a test exception I want to throw !!").WriteLineOnConsoleWithJSON();
 
  new InvalidOperationException("This a test exception I want to throw !!").WriteLineOnConsole();
+
+
+ // Print DateTime object in proper and also optional format on console
+
+ FluentConsole.Console.WriteLine(DateTime.Now).Print();
+
+ FluentConsole.Console.WriteLine(DateTime.Now,"HH:mm:ss").Print();
 
 ```  
 

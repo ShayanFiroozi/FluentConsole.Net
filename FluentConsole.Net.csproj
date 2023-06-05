@@ -8,7 +8,7 @@
     <ApplicationIcon>command.ico</ApplicationIcon>
     <PackageIcon>command.png</PackageIcon>
     <Title>FluentConsole.Net  , Using .Net Console In Elegant Way !</Title>
-    <Version>1.0.8556</Version>
+    <Version>1.0.8557</Version>
     <Authors>Shayan Firoozi &lt;shayan.firoozi@gmail.com&gt;</Authors>
     <Company>TrendSoft®</Company>
     <Description>Working with .Net Console in elegant way with fluent builder interface.</Description>
@@ -16,11 +16,10 @@
     <PackageProjectUrl>https://github.com/ShayanFiroozi/FluentConsole.Net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ShayanFiroozi/FluentConsole.Net</RepositoryUrl>
     <PackageReadmeFile>README-Nuget.md</PackageReadmeFile>
-    <PackageReleaseNotes>✔ 1.0.8556 ( 2023-06-04 )
-  * Improve performance.
-  * Add "Write/WriteLineNumberRange" method.
-  * Add "ResetColor" method.
-  * Change "Print" method type to void.</PackageReleaseNotes>
+    <PackageReleaseNotes>✔ Refactor Write and WriteLine.
+✔ Add more overload for Write and WriteLine
+✔ Add Exception class print on console with normal and JSON format.
+✔ Rename some methods.</PackageReleaseNotes>
     <PackageTags>console;csharp;dotnet;net7;net6;net48;fluent;helper;c#</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>

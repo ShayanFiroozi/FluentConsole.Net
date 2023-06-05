@@ -11,4 +11,9 @@
   * Add "Write/WriteLineNumberRange" method.
   * Add "ResetColor" method.
   * Change "Print" method type to void.
- 
+
+ ## ✔ 1.0.8557 ( 2023-06-05 )
+  * Refactor Write and WriteLine.
+  * Add more overload for Write and WriteLine
+  * Add Exception class print on console with normal and JSON format.
+  * Rename some methods.
