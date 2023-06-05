@@ -70,14 +70,21 @@ Since this is a new repository , there's no contributor yet! , But **FluentConso
 
 
  ```csharp
-1364.PrintOnConsole(Formatted: true);
-true.PrintOnConsole();
-false.PrintOnConsole(YesNoFormat: true);
+1364.WriteLineOnConsole(Formatted: true);
+true.WriteLineOnConsole();
+false.WriteLineOnConsole(YesNoFormat: true);
  
  // Also for List<string>
 List<string> greatest = new List<string>() { "David Gilmour", "Joe Satriani", "Stevie Ray Vaughan", "Slash !", "Paul Mccartney" };
-greatest.PrintLineOnConsole();
- 
+greatest.WriteLineOnConsole();
+
+
+ // Printing your exception object as easy as hell !
+
+ new InvalidOperationException("This a test exception I want to throw !!").WriteLineOnConsoleWithJSON();
+
+ new InvalidOperationException("This a test exception I want to throw !!").WriteLineOnConsole();
+
 ```  
 <br/>
  

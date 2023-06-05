@@ -60,6 +60,7 @@ namespace FluentConsoleNet.TestApp
 
                     greatest.WriteLineOnConsole();
 
+                    new InvalidOperationException("This a test exception I want to throw !!").WriteOnConsoleWithJSON();
 
 
                 });

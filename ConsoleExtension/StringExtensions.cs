@@ -19,7 +19,13 @@ namespace FluentConsoleNet.ConsoleExtension
     public static partial class ExtensionMethods
     {
 
-        public static void PrintOnConsole(this string text)
+        public static void WriteOnConsole(this string text)
+        {
+            FluentConsole.Console.Write(text).Print();
+        }
+
+
+        public static void WriteLineOnConsole(this string text)
         {
             FluentConsole.Console.WriteLine(text).Print();
         }
