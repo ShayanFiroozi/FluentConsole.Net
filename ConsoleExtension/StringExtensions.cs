@@ -12,8 +12,6 @@
 
 ---------------------------------------------------------------------------------------------*/
 
-using System.Collections.Generic;
-
 namespace FluentConsoleNet.ConsoleExtension
 {
     public static partial class ExtensionMethods

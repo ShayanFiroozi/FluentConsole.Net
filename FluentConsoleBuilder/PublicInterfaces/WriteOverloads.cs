@@ -48,7 +48,7 @@ namespace FluentConsoleNet.Builder
             return this;
         }
 
-        
+
         // ushort
         public FluentConsoleBuilder Write(ushort number, bool formatted = false)
         {

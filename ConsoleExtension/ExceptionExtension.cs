@@ -13,7 +13,6 @@
 ---------------------------------------------------------------------------------------------*/
 
 using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace FluentConsoleNet.ConsoleExtension
@@ -57,7 +56,7 @@ namespace FluentConsoleNet.ConsoleExtension
         }
 
 
-        private static string ToStringFormat(this Exception exception, int SpaceLevel = 1)
+        private static string ToStringFormat(this Exception exception)
         {
             if (exception is null)
             {
