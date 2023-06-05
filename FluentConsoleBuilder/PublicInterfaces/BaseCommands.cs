@@ -28,8 +28,7 @@ namespace FluentConsoleNet.Builder
 
         public FluentConsoleBuilder WriteLine(string text)
         {
-            MessageList.Add(text + Environment.NewLine);
-
+            Write(text + Environment.NewLine);
             return this;
         }
 
@@ -39,7 +38,7 @@ namespace FluentConsoleNet.Builder
 
         public FluentConsoleBuilder ClearScreen()
         {
-            MessageList.Add(ClearScreenSign);
+            Write(ClearScreenSign);
             return this;
         }
 
@@ -57,14 +56,14 @@ namespace FluentConsoleNet.Builder
 
         public FluentConsoleBuilder Beep()
         {
-            MessageList.Add(BeepSign);
+            Write(BeepSign);
             return this;
         }
 
 
         public FluentConsoleBuilder ResetColor()
         {
-            MessageList.Add(ResetColorsSign);
+            Write(ResetColorsSign);
             return this;
         }
 
@@ -73,7 +72,7 @@ namespace FluentConsoleNet.Builder
         public FluentConsoleBuilder WithFontColor(ConsoleColor color)
         {
 
-            MessageList.Add($"{FontColorSign}{color}{CommandSign}");
+            Write($"{FontColorSign}{color}{CommandSign}");
 
             return this;
         }
@@ -82,7 +81,7 @@ namespace FluentConsoleNet.Builder
         public FluentConsoleBuilder WithBackColor(ConsoleColor color)
         {
 
-            MessageList.Add($"{BackColorSign}{color}{CommandSign}");
+            Write($"{BackColorSign}{color}{CommandSign}");
 
 
             return this;
@@ -92,7 +91,7 @@ namespace FluentConsoleNet.Builder
         public FluentConsoleBuilder WithTitle(string title)
         {
 
-            MessageList.Add($"{ConsoleTitleSign}{title}{CommandSign}");
+            Write($"{ConsoleTitleSign}{title}{CommandSign}");
 
 
             return this;

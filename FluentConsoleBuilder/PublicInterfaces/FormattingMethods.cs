@@ -21,7 +21,7 @@ namespace FluentConsoleNet.Builder
 
         public FluentConsoleBuilder AddSpace(int SpaceCount = 1)
         {
-            MessageList.Add(new string(' ', SpaceCount));
+            Write(new string(' ', SpaceCount));
 
             return this;
         }
@@ -29,7 +29,7 @@ namespace FluentConsoleNet.Builder
 
         public FluentConsoleBuilder AddLine(int LineWidth)
         {
-            MessageList.Add(new string('_', LineWidth));
+            Write(new string('_', LineWidth));
 
             return this;
         }
@@ -37,7 +37,7 @@ namespace FluentConsoleNet.Builder
 
         public FluentConsoleBuilder AddCharacter(char character, int CharacterCount)
         {
-            MessageList.Add(new string(character, CharacterCount));
+            Write(new string(character, CharacterCount));
 
             return this;
         }
@@ -47,7 +47,7 @@ namespace FluentConsoleNet.Builder
 
             for (int i = 0; i < BreakLineCount; i++)
             {
-                MessageList.Add(Environment.NewLine);
+                Write(Environment.NewLine);
             }
 
 
