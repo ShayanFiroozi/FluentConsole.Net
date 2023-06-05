@@ -17,7 +17,36 @@ namespace FluentConsoleNet.ConsoleExtension
     public static partial class ExtensionMethods
     {
 
-        public static void PrintOnConsole(this bool boolean, bool YesNoFormat = false)
+        public static void WriteOnConsole(this bool boolean, bool YesNoFormat = false)
+        {
+            if (boolean)
+            {
+                if (YesNoFormat)
+                {
+                    FluentConsole.Console.Write("Yes").Print();
+                }
+                else
+                {
+                    FluentConsole.Console.Write(boolean.ToString()).Print();
+                }
+            }
+            else
+            {
+                if (YesNoFormat)
+                {
+                    FluentConsole.Console.Write("No").Print();
+                }
+                else
+                {
+                    FluentConsole.Console.Write(boolean.ToString()).Print();
+                }
+            }
+
+        }
+
+
+
+        public static void WriteLineOnConsole(this bool boolean, bool YesNoFormat = false)
         {
             if (boolean)
             {
@@ -43,7 +72,6 @@ namespace FluentConsoleNet.ConsoleExtension
             }
 
         }
-
 
     }
 }

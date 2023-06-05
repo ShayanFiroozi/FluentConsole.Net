@@ -19,19 +19,44 @@ namespace FluentConsoleNet.ConsoleExtension
 
         #region Integral numeric types
 
-        public static void PrintOnConsole(this sbyte number)
+        //sbyte
+        public static void WriteOnConsole(this sbyte number)
+        {
+            FluentConsole.Console.Write(number.ToString()).Print();
+        }
+        public static void WriteLineOnConsole(this sbyte number)
         {
             FluentConsole.Console.WriteLine(number.ToString()).Print();
         }
 
-        public static void PrintOnConsole(this byte number)
+
+
+        // byte
+        public static void WriteOnConsole(this byte number)
+        {
+            FluentConsole.Console.Write(number.ToString()).Print();
+
+        }
+        public static void WriteLineOnConsole(this byte number)
         {
             FluentConsole.Console.WriteLine(number.ToString()).Print();
 
         }
 
 
-        public static void PrintOnConsole(this short number, bool Formatted = false)
+        // short
+        public static void WriteOnConsole(this short number, bool Formatted = false)
+        {
+            if (Formatted)
+            {
+                FluentConsole.Console.Write($"{number:N0}").Print();
+            }
+            else
+            {
+                FluentConsole.Console.Write(number.ToString()).Print();
+            }
+        }
+        public static void WriteLineOnConsole(this short number, bool Formatted = false)
         {
             if (Formatted)
             {
@@ -44,7 +69,19 @@ namespace FluentConsoleNet.ConsoleExtension
         }
 
 
-        public static void PrintOnConsole(this ushort number, bool Formatted = false)
+        // ushort
+        public static void WriteOnConsole(this ushort number, bool Formatted = false)
+        {
+            if (Formatted)
+            {
+                FluentConsole.Console.Write($"{number:N0}").Print();
+            }
+            else
+            {
+                FluentConsole.Console.Write(number.ToString()).Print();
+            }
+        }
+        public static void WriteLineOnConsole(this ushort number, bool Formatted = false)
         {
             if (Formatted)
             {
@@ -57,7 +94,20 @@ namespace FluentConsoleNet.ConsoleExtension
         }
 
 
-        public static void PrintOnConsole(this int number, bool Formatted = false)
+
+        // int
+        public static void WriteOnConsole(this int number, bool Formatted = false)
+        {
+            if (Formatted)
+            {
+                FluentConsole.Console.Write($"{number:N0}").Print();
+            }
+            else
+            {
+                FluentConsole.Console.Write(number.ToString()).Print();
+            }
+        }
+        public static void WriteLineOnConsole(this int number, bool Formatted = false)
         {
             if (Formatted)
             {
@@ -70,7 +120,19 @@ namespace FluentConsoleNet.ConsoleExtension
         }
 
 
-        public static void PrintOnConsole(this uint number, bool Formatted = false)
+        // uint
+        public static void WriteOnConsole(this uint number, bool Formatted = false)
+        {
+            if (Formatted)
+            {
+                FluentConsole.Console.Write($"{number:N0}").Print();
+            }
+            else
+            {
+                FluentConsole.Console.Write(number.ToString()).Print();
+            }
+        }
+        public static void WriteLineOnConsole(this long number, bool Formatted = false)
         {
             if (Formatted)
             {
@@ -80,24 +142,24 @@ namespace FluentConsoleNet.ConsoleExtension
             {
                 FluentConsole.Console.WriteLine(number.ToString()).Print();
             }
+
         }
 
 
-        public static void PrintOnConsole(this long number, bool Formatted = false)
+        // ulong
+        public static void WriteOnConsole(this ulong number, bool Formatted = false)
         {
             if (Formatted)
             {
-                FluentConsole.Console.WriteLine($"{number:N0}").Print();
+                FluentConsole.Console.Write($"{number:N0}").Print();
             }
             else
             {
-                FluentConsole.Console.WriteLine(number.ToString()).Print();
+                FluentConsole.Console.Write(number.ToString()).Print();
             }
 
         }
-
-
-        public static void PrintOnConsole(this ulong number, bool Formatted = false)
+        public static void WriteLineOnConsole(this ulong number, bool Formatted = false)
         {
             if (Formatted)
             {
@@ -116,8 +178,20 @@ namespace FluentConsoleNet.ConsoleExtension
         #region Floating-point numeric types
 
 
+        // float
+        public static void WriteOnConsole(this float number, bool Formatted = false)
+        {
+            if (Formatted)
+            {
+                FluentConsole.Console.Write($"{number:N6}").Print();
+            }
+            else
+            {
+                FluentConsole.Console.Write(number.ToString()).Print();
+            }
 
-        public static void PrintOnConsole(this float number, bool Formatted = false)
+        }
+        public static void WriteLineOnConsole(this float number, bool Formatted = false)
         {
             if (Formatted)
             {
@@ -131,7 +205,21 @@ namespace FluentConsoleNet.ConsoleExtension
         }
 
 
-        public static void PrintOnConsole(this double number, bool Formatted = false)
+
+        // double
+        public static void WriteOnConsole(this double number, bool Formatted = false)
+        {
+            if (Formatted)
+            {
+                FluentConsole.Console.Write($"{number:N6}").Print();
+            }
+            else
+            {
+                FluentConsole.Console.Write(number.ToString()).Print();
+            }
+
+        }
+        public static void WriteLineOnConsole(this double number, bool Formatted = false)
         {
             if (Formatted)
             {
@@ -144,7 +232,20 @@ namespace FluentConsoleNet.ConsoleExtension
 
         }
 
-        public static void PrintOnConsole(this decimal number, bool Formatted = false)
+
+        // decimal
+        public static void WriteOnConsole(this decimal number, bool Formatted = false)
+        {
+            if (Formatted)
+            {
+                FluentConsole.Console.Write($"{number:N6}").Print();
+            }
+            else
+            {
+                FluentConsole.Console.Write(number.ToString()).Print();
+            }
+        }
+        public static void WriteLineOnConsole(this decimal number, bool Formatted = false)
         {
             if (Formatted)
             {

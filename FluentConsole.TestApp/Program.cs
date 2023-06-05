@@ -58,7 +58,7 @@ namespace FluentConsoleNet.TestApp
                     // Bugs here ... seems to be not thread-safe !!!
                     List<string> greatest = new List<string>() { "David Gilmour", "Soe Satriani", "Stevie Ray Vaughan", "Slash !", "Paul Mccartney" };
 
-                    greatest.PrintLineOnConsole();
+                    greatest.WriteLineOnConsole();
 
 
 
