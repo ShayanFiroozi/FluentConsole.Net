@@ -14,7 +14,7 @@
 
 using System.Collections.Generic;
 
-namespace FluentConsoleNet
+namespace FluentConsoleNet.Builder
 {
     public sealed partial class FluentConsoleBuilder
     {

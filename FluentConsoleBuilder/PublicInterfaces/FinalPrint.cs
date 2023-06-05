@@ -12,19 +12,48 @@
 
 ---------------------------------------------------------------------------------------------*/
 
+using System;
+using System.Collections.Generic;
+
 namespace FluentConsoleNet.Builder
 {
     public sealed partial class FluentConsoleBuilder
     {
 
-        private const string CommandSign = "[/]";
+        public void Print()
+        {
+            _ = PrintOnConsole();
 
-        private const string FontColorSign = "fontcolor" + CommandSign;
-        private const string BackColorSign = "backcolor" + CommandSign;
-        private const string ConsoleTitleSign = "consoletitle" + CommandSign;
-        private const string ClearScreenSign = CommandSign + "clearscreen" + CommandSign;
-        private const string BeepSign = CommandSign + "beep" + CommandSign;
-        private const string ResetColorsSign = CommandSign + "resetcolors" + CommandSign;
+        }
+
+
+        public void PrintAndLog()
+        {
+            string dataToLog = PrintOnConsole();
+
+            Print();
+
+            Logger?.LogConsole(dataToLog);
+        }
+
+
+        private string PrintOnConsole()
+        {
+            try
+            {
+
+                return ProcessMessageList();
+
+            }
+            finally
+            {
+                MessageList.Clear();
+                Console.ResetColor();
+            }
+        }
+
+
+
 
 
     }

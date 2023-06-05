@@ -12,6 +12,7 @@
 
 ---------------------------------------------------------------------------------------------*/
 
+using FluentConsoleNet.Builder;
 using System;
 
 namespace FluentConsoleNet

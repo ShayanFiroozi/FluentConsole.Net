@@ -16,7 +16,7 @@ using FluentConsoleNet.Helpers;
 using System;
 using System.Text;
 
-namespace FluentConsoleNet
+namespace FluentConsoleNet.Builder
 {
     public sealed partial class FluentConsoleBuilder
     {
