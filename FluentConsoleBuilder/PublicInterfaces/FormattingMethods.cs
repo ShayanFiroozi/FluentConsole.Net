@@ -27,7 +27,7 @@ namespace FluentConsoleNet.Builder
         }
 
 
-        public FluentConsoleBuilder AddLine(int LineWidth)
+        public FluentConsoleBuilder AddLine(int LineWidth = 10)
         {
             Write(new string('_', LineWidth));
 
@@ -42,10 +42,10 @@ namespace FluentConsoleNet.Builder
             return this;
         }
 
-        public FluentConsoleBuilder AddLineBreak(int BreakLineCount = 1)
+        public FluentConsoleBuilder AddLineBreak(int LineBreakCount = 1)
         {
 
-            for (int i = 0; i < BreakLineCount; i++)
+            for (int i = 0; i < LineBreakCount; i++)
             {
                 Write(Environment.NewLine);
             }

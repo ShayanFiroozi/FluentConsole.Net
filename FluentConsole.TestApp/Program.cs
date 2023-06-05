@@ -33,39 +33,34 @@ namespace FluentConsoleNet.TestApp
             {
                 Task.Run(() =>
                 {
-                    FluentConsole.Console
-                              .WithFontColor(ConsoleColor.Yellow)
-                              .WithBackColor(ConsoleColor.DarkGray)
-                                .Write(DateTime.Now.ToString())
-                                .AddSpace(1)
-
-                              .WriteLine("Shayan Firoozi")
-                              .AddCharacter('*', 20)
-                              .AddLineBreak(5).Print();
-
-                    FluentConsole.Console.AddLineBreak(5).Print();
 
                     FluentConsole.Console
-                             .WithFontColor(ConsoleColor.Yellow)
-                             .WithBackColor(ConsoleColor.DarkGray)
-                               .Write(DateTime.Now.ToString())
-                               .AddSpace(1)
+                                 .AddLineBreak(3)
+                                 .WithFontColor(ConsoleColor.Yellow)
+                                 .WithBackColor(ConsoleColor.DarkGray)
+                                 .Write(DateTime.Now.ToString())
+                                 .ResetColor()
+                                 .AddSpace(1)
+                                 .WriteLine("Shayan Firoozi")
+                                 .AddCharacter('*', 20)
+                                 .AddLineBreak(5)
+                                 .Print();
 
-                             .WriteLine("Shayan Firoozi")
-                             .AddCharacter('*', 20).WriteLine(1, 10)
-                             .AddLineBreak(5).PrintAndLog();
+                });
 
-                    // Bugs here ... seems to be not thread-safe !!!
-                    List<string> greatest = new List<string>() { "David Gilmour", "Soe Satriani", "Stevie Ray Vaughan", "Slash !", "Paul Mccartney" };
+
+                Task.Run(() =>
+                {
+
+
+                    List<string> greatest = new List<string>() { "David Gilmour", "Joe Satriani", "Stevie Ray Vaughan", "Slash !", "Paul Mccartney" };
 
                     greatest.WriteLineOnConsole();
 
-                    new InvalidOperationException("This a test exception I want to throw !!").WriteOnConsoleWithJSON();
-
-                    FluentConsole.Console.WriteLine(DateTime.Now).Print();
-
 
                 });
+
+
 
                 Task.Delay(1).GetAwaiter().GetResult();
 

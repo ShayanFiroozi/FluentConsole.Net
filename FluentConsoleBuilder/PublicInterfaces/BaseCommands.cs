@@ -22,6 +22,7 @@ namespace FluentConsoleNet.Builder
         // Base Write and WriteLine
         public FluentConsoleBuilder Write(string text)
         {
+
             MessageList.Add(text);
             return this;
         }
