@@ -36,29 +36,26 @@ namespace FluentConsoleNet.TestApp
 
                     FluentConsole.Console
                                  .AddLineBreak(3)
-                                 .WithFontColor(ConsoleColor.Yellow)
-                                 .WithBackColor(ConsoleColor.DarkGray)
+                                 .WithFontColor(ConsoleColor.Green)
                                  .Write(DateTime.Now.ToString())
                                  .ResetColor()
                                  .AddSpace(1)
                                  .WriteLine("Shayan Firoozi")
-                                 .AddCharacter('*', 20)
-                                 .AddLineBreak(5)
                                  .Print();
 
                 });
 
 
-                Task.Run(() =>
-                {
+                //Task.Run(() =>
+                //{
 
 
-                    List<string> greatest = new List<string>() { "David Gilmour", "Joe Satriani", "Stevie Ray Vaughan", "Slash !", "Paul Mccartney" };
+                //    List<string> greatest = new List<string>() { "David Gilmour", "Joe Satriani", "Stevie Ray Vaughan", "Slash !", "Paul Mccartney" };
 
-                    greatest.WriteLineOnConsole();
+                //    greatest.WriteLineOnConsole();
 
 
-                });
+                //});
 
 
 
