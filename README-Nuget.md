@@ -9,7 +9,7 @@
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ShayanFiroozi_FluentConsole.Net&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=ShayanFiroozi_FluentConsole.Net)
 [![License](https://img.shields.io/github/license/shayanfiroozi/fluentconsole.net)](https://github.com/ShayanFiroozi/FluentConsole.Net/blob/master/LICENSE.md)
 
-# FluentConsole.Net
+# **FluentConsole.Net**
 
 Using .Net **Console** In Elegant Way ! 
  
