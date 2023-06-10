@@ -18,10 +18,10 @@
     <PackageReadmeFile>README-Nuget.md</PackageReadmeFile>
     <PackageReleaseNotes>✔ 1.1.8561 ( 2023-06-10 )
 
-➕ Add **"ToJsonFormat()"** and **"ToStringFormat()"** extension methods to the **"Exception"** class.
-➕ Add **"public FluentConsoleBuilder Write(Exception exception, bool JsonFormat = true)"** method.
-🛠 Fix **"WriteLine(List&lt;int&gt; IntegerList, bool formatted = false)"** method.
-  ⬆  Update **Test App.**</PackageReleaseNotes>
+➕ Add "ToJsonFormat()" and "ToStringFormat()" extension methods to the "Exception" class.
+➕ Add "public FluentConsoleBuilder Write(Exception exception, bool JsonFormat = true)" method.
+🛠 Fix "WriteLine(List&lt;int&gt; IntegerList, bool formatted = false)" method.
+  ⬆  Update "Test App."</PackageReleaseNotes>
     <PackageTags>console;csharp;dotnet;net7;net6;net48;fluent;helper;c#</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
