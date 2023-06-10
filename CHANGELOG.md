@@ -17,3 +17,10 @@
   * Add more overload for Write and WriteLine
   * Add Exception class print on console with normal and JSON format.
   * Rename some methods.
+
+  ## ✔ 1.1.8561 ( 2023-06-10 )
+   * Add **"ToJsonFormat()"** and **"ToStringFormat()"** extension methods to the **"Exception"** class.
+   * Add **"public FluentConsoleBuilder Write(Exception exception, bool JsonFormat = true)"** method.
+   * Fix **"WriteLine(List<int> IntegerList, bool formatted = false)"** method.
+   * Update **Test App.**
+

@@ -1,4 +1,4 @@
 # FluentConsole.Net
 ## ✔ ToDo List : 
 
-- Nothing !
+- Add **Producer-Consumer Channels** to support full thread-safety.

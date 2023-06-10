@@ -19,7 +19,8 @@ namespace FluentConsoleNet.ConsoleExtension
 {
     public static partial class ExtensionMethods
     {
-        private static string ToJsonFormat(this Exception exception, int SpaceLevel = 1)
+
+        public static string ToJsonFormat(this Exception exception, int SpaceLevel = 1)
         {
             if (exception is null)
             {
@@ -56,7 +57,7 @@ namespace FluentConsoleNet.ConsoleExtension
         }
 
 
-        private static string ToStringFormat(this Exception exception)
+        public static string ToStringFormat(this Exception exception)
         {
             if (exception is null)
             {
@@ -80,6 +81,7 @@ namespace FluentConsoleNet.ConsoleExtension
             return finalMessage.ToString();
 
         }
+
 
         public static void WriteOnConsole(this Exception exception)
         {

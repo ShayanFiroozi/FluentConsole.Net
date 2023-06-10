@@ -12,6 +12,7 @@
 
 ---------------------------------------------------------------------------------------------*/
 
+using FluentConsoleNet.ConsoleExtension;
 using System;
 using System.Collections.Generic;
 
@@ -34,6 +35,7 @@ namespace FluentConsoleNet.Builder
 
             return this;
         }
+
         public FluentConsoleBuilder WriteLine(short number, bool formatted = false)
         {
             if (formatted)
@@ -63,6 +65,7 @@ namespace FluentConsoleNet.Builder
 
             return this;
         }
+
         public FluentConsoleBuilder WriteLine(ushort number, bool formatted = false)
         {
             if (formatted)
@@ -92,6 +95,7 @@ namespace FluentConsoleNet.Builder
 
             return this;
         }
+
         public FluentConsoleBuilder WriteLine(int number, bool formatted = false)
         {
             if (formatted)
@@ -121,6 +125,7 @@ namespace FluentConsoleNet.Builder
 
             return this;
         }
+
         public FluentConsoleBuilder WriteLine(uint number, bool formatted = false)
         {
             if (formatted)
@@ -150,6 +155,7 @@ namespace FluentConsoleNet.Builder
 
             return this;
         }
+
         public FluentConsoleBuilder WriteLine(long number, bool formatted = false)
         {
             if (formatted)
@@ -179,6 +185,7 @@ namespace FluentConsoleNet.Builder
 
             return this;
         }
+
         public FluentConsoleBuilder WriteLine(ulong number, bool formatted = false)
         {
             if (formatted)
@@ -208,6 +215,7 @@ namespace FluentConsoleNet.Builder
 
             return this;
         }
+
         public FluentConsoleBuilder WriteLine(float number, bool formatted = false)
         {
             if (formatted)
@@ -238,6 +246,7 @@ namespace FluentConsoleNet.Builder
 
             return this;
         }
+
         public FluentConsoleBuilder WriteLine(double number, bool formatted = false)
         {
             if (formatted)
@@ -269,6 +278,7 @@ namespace FluentConsoleNet.Builder
 
             return this;
         }
+
         public FluentConsoleBuilder WriteLine(decimal number, bool formatted = false)
         {
             if (formatted)
@@ -380,9 +390,16 @@ namespace FluentConsoleNet.Builder
 
         public FluentConsoleBuilder WriteLine(List<int> IntegerList, bool formatted = false)
         {
-            foreach (int stringValue in IntegerList)
+            foreach (int number in IntegerList)
             {
-                WriteLine(stringValue.ToString());
+                if (formatted)
+                {
+                    WriteLine($"{number:N0}");
+                }
+                else
+                {
+                    WriteLine(number.ToString());
+                }
             }
 
             return this;
@@ -458,6 +475,39 @@ namespace FluentConsoleNet.Builder
             WriteLine(dateTime.ToString(format));
             return this;
         }
+
+
+        // Exception 
+
+        public FluentConsoleBuilder Write(Exception exception, bool JsonFormat = true)
+        {
+            if (JsonFormat)
+            {
+                Write(exception.ToJsonFormat());
+            }
+            else
+            {
+                Write(exception.ToStringFormat());
+            }
+
+            return this;
+        }
+
+
+        public FluentConsoleBuilder WriteLine(Exception exception, bool JsonFormat = true)
+        {
+            if (JsonFormat)
+            {
+                WriteLine(exception.ToJsonFormat());
+            }
+            else
+            {
+                WriteLine(exception.ToStringFormat());
+            }
+
+            return this;
+        }
+
 
     }
 

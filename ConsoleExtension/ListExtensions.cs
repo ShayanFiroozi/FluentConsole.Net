@@ -34,17 +34,17 @@ namespace FluentConsoleNet.ConsoleExtension
         }
 
 
-        public static void WriteOnConsole(this List<int> message)
+        public static void WriteOnConsole(this List<int> message , bool Formatted = false)
         {
-            FluentConsole.Console.Write(message).Print();
+            FluentConsole.Console.Write(message, Formatted).Print();
 
 
         }
 
 
-        public static void WriteLineOnConsole(this List<int> message)
+        public static void WriteLineOnConsole(this List<int> message, bool Formatted = false)
         {
-            FluentConsole.Console.WriteLine(message).Print();
+            FluentConsole.Console.WriteLine(message,Formatted).Print();
 
         }
 

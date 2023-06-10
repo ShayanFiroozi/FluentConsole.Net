@@ -24,18 +24,24 @@ namespace FluentConsoleNet.TestApp
 
         private static readonly FastLogger fastLogger = new FastLogger();
 
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
+
             FluentConsole.AttachLogger(fastLogger);
 
 
             while (true)
             {
-                Task.Run(() =>
+               await Task.Run(() =>
                 {
 
                     FluentConsole.Console
-                                 .AddLineBreak(3)
+                                 .AddLineBreak(2)
+                                 .WithFontColor(ConsoleColor.Yellow)
+                                 .WriteLine("This is a multi color example : ")
+                                 .Print();
+
+                    FluentConsole.Console
                                  .WithFontColor(ConsoleColor.Green)
                                  .Write(DateTime.Now.ToString())
                                  .ResetColor()
@@ -45,34 +51,69 @@ namespace FluentConsoleNet.TestApp
 
                 });
 
-
-                //Task.Run(() =>
-                //{
-
-
-                //    List<string> greatest = new List<string>() { "David Gilmour", "Joe Satriani", "Stevie Ray Vaughan", "Slash !", "Paul Mccartney" };
-
-                //    greatest.WriteLineOnConsole();
+               await Task.Run(() =>
+                {
 
 
-                //});
+                    FluentConsole.Console
+                    .AddLineBreak(2)
+                    .WithFontColor(ConsoleColor.Yellow)
+                    .WriteLine("This is a List<string> example : ")
+                    .Print();
+
+
+                    List<string> greatest = new List<string>() { "David Gilmour", "Joe Satriani", "Stevie Ray Vaughan", "Slash !", "Paul Mccartney" };
+
+                    greatest.WriteLineOnConsole();
+
+                });
+
+               await Task.Run(() =>
+                {
+
+
+                    FluentConsole.Console
+                    .AddLineBreak(2)
+                    .WithFontColor(ConsoleColor.Yellow)
+                    .WriteLine("This is a List<int> example ( formatted ): ")
+                    .Print();
+
+
+                    List<int> numbers = new List<int>() { 1364, 1368, 1998, 1985, 1989 };
+
+                    numbers.WriteLineOnConsole(true);
+
+                });
+
+              await  Task.Run(() =>
+                {
+
+
+                    FluentConsole.Console
+                    .AddLineBreak(2)
+                    .WithFontColor(ConsoleColor.Yellow)
+                    .WriteLine("This is a List<int> example ( unformatted ): ")
+                    .Print();
+
+
+                    List<int> numbers = new List<int>() { 1364, 1368, 1998, 1985, 1989 };
+
+                    numbers.WriteLineOnConsole(false);
+
+                });
 
 
 
-                Task.Delay(1).GetAwaiter().GetResult();
+                Task.Delay(2_000).GetAwaiter().GetResult();
+
 
                 if (Console.KeyAvailable)
                 {
                     return;
                 }
+
             }
 
-
-
-
-            Console.WriteLine("Finished.");
-
-            Console.ReadLine();
         }
     }
 
