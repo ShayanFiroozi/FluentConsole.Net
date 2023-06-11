@@ -119,7 +119,6 @@ namespace FluentConsoleNet.Builder
         public void PrintError(string error, bool IncludeDateTime = true)
         {
 
-            if (IncludeDateTime)
                 if (IncludeDateTime)
                 {
                     FluentConsole.Console
@@ -155,7 +154,6 @@ namespace FluentConsoleNet.Builder
         public void PrintDebug(string error, bool IncludeDateTime = true)
         {
 
-            if (IncludeDateTime)
                 if (IncludeDateTime)
                 {
                     FluentConsole.Console

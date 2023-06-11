@@ -8,7 +8,7 @@
     <ApplicationIcon>command.ico</ApplicationIcon>
     <PackageIcon>command.png</PackageIcon>
     <Title>FluentConsole.Net  , Using .Net Console In Elegant Way !</Title>
-    <Version>1.0.8562</Version>
+    <Version>1.0.8562.1</Version>
     <Authors>Shayan Firoozi &lt;shayan.firoozi@gmail.com&gt;</Authors>
     <Company>TrendSoft®</Company>
     <Description>Using .Net Console with fluent builder interface with many extension methods.</Description>
@@ -16,7 +16,7 @@
     <PackageProjectUrl>https://github.com/ShayanFiroozi/FluentConsole.Net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ShayanFiroozi/FluentConsole.Net</RepositoryUrl>
     <PackageReadmeFile>README-Nuget.md</PackageReadmeFile>
-    <PackageReleaseNotes>✔ 1.1.8562 ( 2023-06-11 )
+    <PackageReleaseNotes>✔ 1.1.8562.1 ( 2023-06-11 ) - BugFixed verison of 1.1.8562
 
    ➕  Add "FastConsole" class to print message(s) very easy :
 
