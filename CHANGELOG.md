@@ -24,3 +24,14 @@
    * Fix **"WriteLine(List<int> IntegerList, bool formatted = false)"** method.
    * Update **Test App.**
 
+   ## ✔ 1.1.8562 ( 2023-06-11 )
+   * Add **FastConsole** feature to print message(s) very easy :
+     → **PrintText**(string text, bool IncludeDateTime = true)
+     → **PrintInfo**(string info, bool IncludeDateTime = true)
+     → **PrintWarning**(string warning, bool IncludeDateTime = true)
+     → **PrintError**(string error, bool IncludeDateTime = true)
+     → **PrintDebug**(string error, bool IncludeDateTime = true)
+     → **PrintException**(Exception exception, bool IncludeDateTime = true, bool JsonFormat = true)
+   * Update **TestApp** to test the **FastConsole** feture.
+
+

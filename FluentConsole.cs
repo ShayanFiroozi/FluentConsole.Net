@@ -23,6 +23,7 @@ namespace FluentConsoleNet
 
         public static FluentConsoleBuilder Console => FluentConsoleBuilder.Create(Logger);
 
+        public static FastConsole FastConsole = new FastConsole();
 
         public static void AttachLogger(dynamic logger)
         {

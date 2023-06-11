@@ -32,79 +32,92 @@ namespace FluentConsoleNet.TestApp
 
             while (true)
             {
-               await Task.Run(() =>
-                {
+                await Task.Run(() =>
+                 {
 
-                    FluentConsole.Console
-                                 .AddLineBreak(2)
-                                 .WithFontColor(ConsoleColor.Yellow)
-                                 .WriteLine("This is a multi color example : ")
-                                 .Print();
+                     FluentConsole.FastConsole.PrintText("This is a Fast Simple Text !");
 
-                    FluentConsole.Console
-                                 .WithFontColor(ConsoleColor.Green)
-                                 .Write(DateTime.Now.ToString())
-                                 .ResetColor()
-                                 .AddSpace(1)
-                                 .WriteLine("Shayan Firoozi")
-                                 .Print();
+                     FluentConsole.Console
+                                  .AddLineBreak(2)
+                                  .WithFontColor(ConsoleColor.Yellow)
+                                  .WriteLine("This is a multi color example : ")
+                                  .Print();
 
-                });
+                     FluentConsole.Console
+                                  .WithFontColor(ConsoleColor.Green)
+                                  .Write(DateTime.Now.ToString())
+                                  .ResetColor()
+                                  .AddSpace(1)
+                                  .WriteLine("Shayan Firoozi")
+                                  .Print();
 
-               await Task.Run(() =>
-                {
+                 });
 
-
-                    FluentConsole.Console
-                    .AddLineBreak(2)
-                    .WithFontColor(ConsoleColor.Yellow)
-                    .WriteLine("This is a List<string> example : ")
-                    .Print();
+                await Task.Run(() =>
+                 {
+                     FluentConsole.FastConsole.PrintWarning("This is a Fast Warning Text !");
 
 
-                    List<string> greatest = new List<string>() { "David Gilmour", "Joe Satriani", "Stevie Ray Vaughan", "Slash !", "Paul Mccartney" };
-
-                    greatest.WriteLineOnConsole();
-
-                });
-
-               await Task.Run(() =>
-                {
+                     FluentConsole.Console
+                     .AddLineBreak(2)
+                     .WithFontColor(ConsoleColor.Yellow)
+                     .WriteLine("This is a List<string> example : ")
+                     .Print();
 
 
-                    FluentConsole.Console
-                    .AddLineBreak(2)
-                    .WithFontColor(ConsoleColor.Yellow)
-                    .WriteLine("This is a List<int> example ( formatted ): ")
-                    .Print();
+                     List<string> greatest = new List<string>() { "David Gilmour", "Joe Satriani", "Stevie Ray Vaughan", "Slash !", "Paul Mccartney" };
+
+                     greatest.WriteLineOnConsole();
+
+                     FluentConsole.FastConsole.PrintException(new InvalidTimeZoneException("This is my test exception"), false);
+
+                 });
+
+                await Task.Run(() =>
+                 {
+                     FluentConsole.FastConsole.PrintError("This is a Fast Error Text !");
+
+                     FluentConsole.Console
+                     .AddLineBreak(2)
+                     .WithFontColor(ConsoleColor.Yellow)
+                     .WriteLine("This is a List<int> example ( formatted ): ")
+                     .Print();
 
 
-                    List<int> numbers = new List<int>() { 1364, 1368, 1998, 1985, 1989 };
+                     List<int> numbers = new List<int>() { 1364, 1368, 1998, 1985, 1989 };
 
-                    numbers.WriteLineOnConsole(true);
+                     numbers.WriteLineOnConsole(true);
 
-                });
+                     FluentConsole.FastConsole.PrintException(new InvalidTimeZoneException("This is my test exception"), false);
 
-              await  Task.Run(() =>
-                {
+                 });
 
+                await Task.Run(() =>
+                  {
 
-                    FluentConsole.Console
-                    .AddLineBreak(2)
-                    .WithFontColor(ConsoleColor.Yellow)
-                    .WriteLine("This is a List<int> example ( unformatted ): ")
-                    .Print();
+                      FluentConsole.FastConsole.PrintDebug("This is a Fast Debug Text !");
+                      FluentConsole.FastConsole.PrintInfo("This is a Fast Info Text !");
 
-
-                    List<int> numbers = new List<int>() { 1364, 1368, 1998, 1985, 1989 };
-
-                    numbers.WriteLineOnConsole(false);
-
-                });
+                      FluentConsole.Console
+                      .AddLineBreak(2)
+                      .WithFontColor(ConsoleColor.Yellow)
+                      .WriteLine("This is a List<int> example ( unformatted ): ")
+                      .Print();
 
 
+                      List<int> numbers = new List<int>() { 1364, 1368, 1998, 1985, 1989 };
 
-                Task.Delay(2_000).GetAwaiter().GetResult();
+                      numbers.WriteLineOnConsole(false);
+
+                      FluentConsole.FastConsole.PrintException(new InvalidTimeZoneException("This is my test exception"), false);
+
+                  });
+
+
+                
+
+
+                Task.Delay(2).GetAwaiter().GetResult();
 
 
                 if (Console.KeyAvailable)

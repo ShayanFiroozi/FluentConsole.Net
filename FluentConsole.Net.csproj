@@ -8,7 +8,7 @@
     <ApplicationIcon>command.ico</ApplicationIcon>
     <PackageIcon>command.png</PackageIcon>
     <Title>FluentConsole.Net  , Using .Net Console In Elegant Way !</Title>
-    <Version>1.0.8561</Version>
+    <Version>1.0.8562</Version>
     <Authors>Shayan Firoozi &lt;shayan.firoozi@gmail.com&gt;</Authors>
     <Company>TrendSoft®</Company>
     <Description>Using .Net Console with fluent builder interface with many extension methods.</Description>
@@ -16,12 +16,16 @@
     <PackageProjectUrl>https://github.com/ShayanFiroozi/FluentConsole.Net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ShayanFiroozi/FluentConsole.Net</RepositoryUrl>
     <PackageReadmeFile>README-Nuget.md</PackageReadmeFile>
-    <PackageReleaseNotes>✔ 1.1.8561 ( 2023-06-10 )
+    <PackageReleaseNotes>✔ 1.1.8562 ( 2023-06-11 )
 
-➕ Add "ToJsonFormat()" and "ToStringFormat()" extension methods to the "Exception" class.
-➕ Add "public FluentConsoleBuilder Write(Exception exception, bool JsonFormat = true)" method.
-🛠 Fix "WriteLine(List&lt;int&gt; IntegerList, bool formatted = false)" method.
-  ⬆  Update "Test App."</PackageReleaseNotes>
+   ➕  Add "FastConsole" class to print message(s) very easy :
+
+     →  PrintText(string text, bool IncludeDateTime = true)
+     → PrintInfo(string info, bool IncludeDateTime = true)
+     → PrintWarning(string warning, bool IncludeDateTime = true)
+     → PrintError(string error, bool IncludeDateTime = true)
+     → PrintDebug(string error, bool IncludeDateTime = true)
+     → PrintException(Exception exception, bool IncludeDateTime = true, bool JsonFormat = true)</PackageReleaseNotes>
     <PackageTags>console;csharp;dotnet;net7;net6;net48;fluent;helper;c#</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
