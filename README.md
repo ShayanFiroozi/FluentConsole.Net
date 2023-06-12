@@ -27,6 +27,20 @@ Using .Net **Console** In Elegant Way !
 
 
 <br/>
+ 
+ ## ⬛ Screen Shots ⬛
+ 
+<p align="center">
+ <img src="https://github.com/ShayanFiroozi/FluentConsole.Net/blob/master/Sample.jpg" alt="FluentConsole.Net Sample">
+</p>
+ 
+ 
+ <p align="center">
+ <img src="https://github.com/ShayanFiroozi/FluentConsole.Net/blob/master/Sample2.jpg" alt="FluentConsole.Net For .Net">
+</p>
+ 
+ 
+ <br/>
 
 ## 🤝Contributions
 Since this is a new repository , there's no contributor yet! , But **FluentConsole.Net** welcomes and appreciates any contribution , pull request or bug report.
@@ -118,19 +132,6 @@ greatest.WriteLineOnConsole();
  
 <br/>
 
-## ⬛ Samples Screen Shot ⬛
- 
-<p align="center">
- <img src="https://github.com/ShayanFiroozi/FluentConsole.Net/blob/master/Sample.jpg" alt="FluentConsole.Net Sample">
-</p>
- 
- 
- <p align="center">
- <img src="https://github.com/ShayanFiroozi/FluentConsole.Net/blob/master/Sample2.jpg" alt="FluentConsole.Net For .Net">
-</p>
- 
- 
- <br/>
  
 ## ‼ Known Issues
  **Not Reported Yet!** 😎
