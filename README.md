@@ -118,7 +118,7 @@ greatest.WriteLineOnConsole();
  
 <br/>
 
-## Samples Screen Shot
+## ⬛ Samples Screen Shot ⬛
  
 <p align="center">
  <img src="https://github.com/ShayanFiroozi/FluentConsole.Net/blob/master/Sample.jpg" alt="FluentConsole.Net Sample">
