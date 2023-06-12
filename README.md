@@ -42,13 +42,13 @@ Using .Net **Console** In Elegant Way !
  
  <br/>
 
-## 🤝Contributions
+## Contributions 🤝
 Since this is a new repository , there's no contributor yet! , But **FluentConsole.Net** welcomes and appreciates any contribution , pull request or bug report.
  
 
 <br/>
  
-## ❔ How To Use  
+## How To Use ❔
  - An elegant fluent builder pattern to work with **Console** 👇   
  
  ```csharp
@@ -133,18 +133,18 @@ greatest.WriteLineOnConsole();
 <br/>
 
  
-## ‼ Known Issues
+## Known Issues ‼
  **Not Reported Yet!** 😎
 
 <br/>
  
- ## © License
+ ## License ©
 **FluentConsole.Net** is an open source software, licensed under the terms of MIT license.
 See [**LICENSE**](LICENSE.md) for more details.
 
 <br/>
  
-## 🛠 How to build
+## How to build 🛠
 Use **Visual Studio 2022** and open the solution 'FluentConsole.sln'.
 
 **FluentConsole.Net** solution is setup to support following .Net versions :
@@ -159,10 +159,10 @@ Since the **FluentConsole.Net** solution is supporting multi target frameworks ,
 
 <br/>
  
-## 💲 Donations
+## Donations 💲
 If you would like to financially support **FluentConsole.Net**, first of all, thank you! Please read [**DONATIONS**](DONATIONS.md) for my crypto wallets !
 
 <br/>
  
-## 🕙 Version History
+## Version History 🕙
 Please read [**CHANGELOG**](CHANGELOG.md) for more and track changing details.
