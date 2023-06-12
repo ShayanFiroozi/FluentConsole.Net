@@ -1,4 +1,5 @@
 ﻿using FluentConsoleNet.ConsoleExtension;
+using FluentConsoleNet.Helpers.Style;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -26,6 +27,10 @@ namespace FluentConsoleNet.TestApp
 
         static async Task Main(string[] args)
         {
+            // Symbolic Style
+            FluentConsole.FastConsole.PrintSymblicText("BBC", FontStyle.StyleA, ConsoleColor.DarkCyan);
+            FluentConsole.FastConsole.PrintSymblicText("BBC", FontStyle.StyleA, ConsoleColor.Yellow);
+
 
             FluentConsole.AttachLogger(fastLogger);
 
@@ -114,7 +119,7 @@ namespace FluentConsoleNet.TestApp
                   });
 
 
-                
+
 
 
                 Task.Delay(2).GetAwaiter().GetResult();

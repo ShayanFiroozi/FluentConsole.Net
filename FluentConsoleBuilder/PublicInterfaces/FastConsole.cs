@@ -12,6 +12,7 @@
 
 ---------------------------------------------------------------------------------------------*/
 
+using FluentConsoleNet.Helpers.Style;
 using System;
 
 namespace FluentConsoleNet.Builder
@@ -119,68 +120,68 @@ namespace FluentConsoleNet.Builder
         public void PrintError(string error, bool IncludeDateTime = true)
         {
 
-                if (IncludeDateTime)
-                {
-                    FluentConsole.Console
-                                 .WithFontColor(DateTimeColor)
-                                 .Write(DateTime.Now.ToString(DateTimeFormat))
-                                 .ResetColor()
-                                 .AddSpace(1)
-                                 .WithBackColor(ConsoleColor.DarkRed)
-                                 .Write("ERROR:")
-                                 .ResetColor()
-                                 .AddSpace(1)
-                                 .WithFontColor(ConsoleColor.Red)
-                                 .WriteLine(error)
-                                 .PrintAndLog();
-                }
+            if (IncludeDateTime)
+            {
+                FluentConsole.Console
+                             .WithFontColor(DateTimeColor)
+                             .Write(DateTime.Now.ToString(DateTimeFormat))
+                             .ResetColor()
+                             .AddSpace(1)
+                             .WithBackColor(ConsoleColor.DarkRed)
+                             .Write("ERROR:")
+                             .ResetColor()
+                             .AddSpace(1)
+                             .WithFontColor(ConsoleColor.Red)
+                             .WriteLine(error)
+                             .PrintAndLog();
+            }
 
-                else
-                {
-                    FluentConsole.Console
-                                 .WithBackColor(ConsoleColor.DarkRed)
-                                 .Write("ERROR:")
-                                 .ResetColor()
-                                 .AddSpace(1)
-                                 .WithFontColor(ConsoleColor.Red)
-                                 .WriteLine(error)
-                                 .PrintAndLog();
-                }
+            else
+            {
+                FluentConsole.Console
+                             .WithBackColor(ConsoleColor.DarkRed)
+                             .Write("ERROR:")
+                             .ResetColor()
+                             .AddSpace(1)
+                             .WithFontColor(ConsoleColor.Red)
+                             .WriteLine(error)
+                             .PrintAndLog();
+            }
 
 
         }
 
 
-        public void PrintDebug(string error, bool IncludeDateTime = true)
+        public void PrintDebug(string debug, bool IncludeDateTime = true)
         {
 
-                if (IncludeDateTime)
-                {
-                    FluentConsole.Console
-                                 .WithFontColor(DateTimeColor)
-                                 .Write(DateTime.Now.ToString(DateTimeFormat))
-                                 .ResetColor()
-                                 .AddSpace(1)
-                                 .WithBackColor(ConsoleColor.DarkMagenta)
-                                 .Write("DEBUG:")
-                                 .ResetColor()
-                                 .AddSpace(1)
-                                 .WithFontColor(ConsoleColor.DarkGray)
-                                 .WriteLine(error)
-                                 .PrintAndLog();
-                }
+            if (IncludeDateTime)
+            {
+                FluentConsole.Console
+                             .WithFontColor(DateTimeColor)
+                             .Write(DateTime.Now.ToString(DateTimeFormat))
+                             .ResetColor()
+                             .AddSpace(1)
+                             .WithBackColor(ConsoleColor.DarkMagenta)
+                             .Write("DEBUG:")
+                             .ResetColor()
+                             .AddSpace(1)
+                             .WithFontColor(ConsoleColor.DarkGray)
+                             .WriteLine(debug)
+                             .PrintAndLog();
+            }
 
-                else
-                {
-                    FluentConsole.Console
-                                 .WithBackColor(ConsoleColor.DarkMagenta)
-                                 .Write("DEBUG:")
-                                 .ResetColor()
-                                 .AddSpace(1)
-                                 .WithFontColor(ConsoleColor.DarkGray)
-                                 .WriteLine(error)
-                                 .PrintAndLog();
-                }
+            else
+            {
+                FluentConsole.Console
+                             .WithBackColor(ConsoleColor.DarkMagenta)
+                             .Write("DEBUG:")
+                             .ResetColor()
+                             .AddSpace(1)
+                             .WithFontColor(ConsoleColor.DarkGray)
+                             .WriteLine(debug)
+                             .PrintAndLog();
+            }
 
 
         }
@@ -221,6 +222,14 @@ namespace FluentConsoleNet.Builder
         }
 
 
+        public void PrintSymblicText(string text, FontStyle fontStyle, ConsoleColor color)
+
+        {
+            FluentConsole.Console
+                         .WithFontColor(color)
+                         .WriteLine(StyleHelper.GetSymbolicText(fontStyle, text))
+                         .Print();
+        }
 
     }
 
