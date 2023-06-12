@@ -83,6 +83,26 @@ greatest.WriteLineOnConsole();
 
 ```  
 
+- **Fast Print** methods 👇    
+ 
+ ```csharp
+ 
+ FluentConsole.FastConsole.PrintDebug("This is a Fast Debug Text !");
+ 
+ FluentConsole.FastConsole.PrintInfo("This is a Fast Info Text !");
+ 
+ FluentConsole.FastConsole.PrintWarning("This is a Fast Warning Text !");
+ 
+ FluentConsole.FastConsole.PrintException(new InvalidTimeZoneException("This is my test exception"), IncludeDateTime: true, JsonFormat: true);
+ 
+ FluentConsole.FastConsole.PrintError("This is a Fast Error Text !");
+ 
+ FluentConsole.FastConsole.PrintDebug("This is a Fast Debug Text !");
+ 
+ FluentConsole.FastConsole.PrintInfo("This is a Fast Info Text !");
+ 
+ ```   
+
  
 ## GitHub Repository
 Please visit FluentConsole.Net Github repository for source code and more info : [**FluentConsole.Net On GitHub**](https://github.com/ShayanFiroozi/FluentConsole.Net)
