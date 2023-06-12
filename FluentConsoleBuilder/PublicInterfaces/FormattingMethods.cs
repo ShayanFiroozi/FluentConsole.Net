@@ -35,7 +35,7 @@ namespace FluentConsoleNet.Builder
         }
 
 
-        public FluentConsoleBuilder AddCharacter(char character, int CharacterCount)
+        public FluentConsoleBuilder AddCharacter(char character, int CharacterCount = 1)
         {
             Write(new string(character, CharacterCount));
 
