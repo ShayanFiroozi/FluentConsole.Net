@@ -95,6 +95,20 @@ greatest.WriteLineOnConsole();
 ```   
 
 <br/>
+
+## Samples Screen Shot
+ 
+<p align="center">
+ <img src="https://github.com/ShayanFiroozi/FluentConsole.Net/blob/master/Sample.jpg" alt="FluentConsole.Net Sample">
+</p>
+ 
+ 
+ <p align="center">
+ <img src="https://github.com/ShayanFiroozi/FluentConsole.Net/blob/master/Sample2.jpg" alt="FluentConsole.Net For .Net">
+</p>
+ 
+ 
+ <br/>
  
 ## ‼ Known Issues
  **Not Reported Yet!** 😎
