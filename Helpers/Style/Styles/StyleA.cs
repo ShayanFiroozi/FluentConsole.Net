@@ -107,6 +107,39 @@
 
             // Z
             StyleHelper.AddAlphabet(FontStyle.StyleA, 'Z', "▀█²█▄");
+
+
+
+            // 1
+            StyleHelper.AddAlphabet(FontStyle.StyleA, '1', "▄█² █");
+
+
+            // 2
+            StyleHelper.AddAlphabet(FontStyle.StyleA, '2', "▀█²█▄");
+
+
+            // 4
+            StyleHelper.AddAlphabet(FontStyle.StyleA, '4', "█ █²▀▀█");
+
+
+            // 5
+            StyleHelper.AddAlphabet(FontStyle.StyleA, '5', "█▀²▄█");
+
+
+            // 6
+            StyleHelper.AddAlphabet(FontStyle.StyleA, '6', "█▄▄²█▄█");
+
+
+            // 7
+            StyleHelper.AddAlphabet(FontStyle.StyleA, '7', "▀▀█²  █");
+
+
+            // 9
+            StyleHelper.AddAlphabet(FontStyle.StyleA, '9', "█▀█²▀▀█");
+
+
+            // 10
+            StyleHelper.AddAlphabet(FontStyle.StyleA, '0', "█▀█²█▄█");
         }
 
     }

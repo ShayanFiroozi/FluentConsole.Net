@@ -66,10 +66,22 @@ namespace FluentConsoleNet.Helpers.Style
             {
                 if (!char.IsLetterOrDigit(character)) continue;
 
-                string wholeSmbolicText =  GetSymbolicAlphabet(fontStyle, char.ToUpper(character));
+                try
 
-                line1 += wholeSmbolicText.Split('²')[0] + ' ';
-                line2 += wholeSmbolicText.Split('²')[1] + ' ';
+                {
+
+                    string wholeSmbolicText = GetSymbolicAlphabet(fontStyle, char.ToUpper(character));
+
+                    string part1 = wholeSmbolicText.Split('²')[0] + ' ';
+                    string part2 = wholeSmbolicText.Split('²')[1] + ' ';
+
+                    line1 += part1;
+                    line2 += part2;
+                }
+                catch 
+                {
+
+                }
             }
 
 

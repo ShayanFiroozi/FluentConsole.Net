@@ -28,9 +28,9 @@ namespace FluentConsoleNet.TestApp
         static async Task Main(string[] args)
         {
             // Symbolic Style
-            FluentConsole.FastConsole.PrintSymblicText("ABCDEFGHIJKLMNOPQRSTUVWXYZ", FontStyle.StyleA, ConsoleColor.DarkCyan);
+            FluentConsole.FastConsole.PrintSymbolicText("ABCDEFGHIJKLMNOPQRSTUVWXYZ", FontStyle.StyleA, ConsoleColor.DarkCyan);
             FluentConsole.Console.AddLineBreak().Print();
-            FluentConsole.FastConsole.PrintSymblicText("ABCDEFGHIJKLMNOPQRSTUVWXYZ", FontStyle.StyleA, ConsoleColor.Yellow);
+            FluentConsole.FastConsole.PrintSymbolicText("123456789", FontStyle.StyleA, ConsoleColor.Yellow);
 
 
             FluentConsole.AttachLogger(fastLogger);

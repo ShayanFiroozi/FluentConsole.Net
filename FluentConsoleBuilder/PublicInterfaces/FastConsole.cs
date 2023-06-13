@@ -222,7 +222,7 @@ namespace FluentConsoleNet.Builder
         }
 
 
-        public void PrintSymblicText(string text, FontStyle fontStyle, ConsoleColor color)
+        public void PrintSymbolicText(string text, FontStyle fontStyle, ConsoleColor color)
 
         {
             FluentConsole.Console
