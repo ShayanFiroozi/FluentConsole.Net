@@ -1,7 +1,7 @@
 # FluentConsole.Net Change Log :
 </br>
 
-   ## ✔ 1.1.8562 ( 2023-06-13 )
+   ## ✔ 1.1.8564 ( 2023-06-13 )
    * Add Symbolic Styles Text for Console (Only alphabets and numbers are available).
 
 

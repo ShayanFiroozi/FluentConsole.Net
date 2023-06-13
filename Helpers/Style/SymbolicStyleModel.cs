@@ -9,11 +9,11 @@
             SymbolicAlphabet = symbolicAlphabet;
         }
 
-        public FontStyle FontStyle { get; set; } = FontStyle.StyleA;
+        public FontStyle FontStyle { get; set; }
 
         public char AsciiAlphabet { get; set; }
 
-        public string SymbolicAlphabet { get; set; } = string.Empty;
+        public string SymbolicAlphabet { get; set; }
 
     }
 }

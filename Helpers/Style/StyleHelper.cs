@@ -9,7 +9,7 @@ namespace FluentConsoleNet.Helpers.Style
 {
     internal static class StyleHelper
     {
-        internal static List<SymbolicStyleModel> SymbolicStylesList = new List<SymbolicStyleModel>();
+        internal readonly static List<SymbolicStyleModel> SymbolicStylesList = new List<SymbolicStyleModel>();
 
 
         private static void InitializeAllStyles()
@@ -21,7 +21,7 @@ namespace FluentConsoleNet.Helpers.Style
 
         public static void AddAlphabet(FontStyle fontStyle, char asciiAlphabet, string symbolicAlphabet)
         {
-            if (SymbolicStylesList.Any(style => style.FontStyle == fontStyle && style.AsciiAlphabet == asciiAlphabet && style.SymbolicAlphabet == symbolicAlphabet))
+            if (SymbolicStylesList.Exists(style => style.FontStyle == fontStyle && style.AsciiAlphabet == asciiAlphabet && style.SymbolicAlphabet == symbolicAlphabet))
             {
                 // The data is already exists on list.
                 return;
@@ -41,7 +41,7 @@ namespace FluentConsoleNet.Helpers.Style
             }
 
 
-            if (SymbolicStylesList.Any(s => s.FontStyle == fontStyle && s.AsciiAlphabet == asciiAlphabet))
+            if (SymbolicStylesList.Exists(s => s.FontStyle == fontStyle && s.AsciiAlphabet == asciiAlphabet))
             {
                 return SymbolicStylesList.First(s => s.FontStyle == fontStyle && s.AsciiAlphabet == asciiAlphabet).SymbolicAlphabet;
             }
@@ -57,17 +57,15 @@ namespace FluentConsoleNet.Helpers.Style
 
         public static string GetSymbolicText(FontStyle fontStyle, string text)
         {
-            string line1 = string.Empty;
-            string line2 = string.Empty;
-
-            
+            StringBuilder line1 = new StringBuilder();
+            StringBuilder line2 = new StringBuilder();
 
             foreach (char character in text)
             {
                 if (char.IsWhiteSpace(character))
                 {
-                    line1 += "  ";
-                    line2 += "  ";
+                    line1.Append("  ");
+                    line2.Append("  ");
 
                     continue;
                 }
@@ -84,12 +82,14 @@ namespace FluentConsoleNet.Helpers.Style
                     string part1 = wholeSymbolicText.Split('²')[0] + ' ';
                     string part2 = wholeSymbolicText.Split('²')[1] + ' ';
 
-                    line1 += part1;
-                    line2 += part2;
+                    line1.Append(part1);
+                    line2.Append(part2);
                 }
                 catch 
                 {
-
+                    // If error occured filled the failed character with itself !
+                    line1.Append(character);
+                    line2.Append(character);
                 }
             }
 
