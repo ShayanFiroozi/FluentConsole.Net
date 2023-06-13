@@ -4,6 +4,9 @@
     {
         public static void InitializeStyle()
         {
+
+            // Alphabets
+
             // A
             StyleHelper.AddAlphabet(FontStyle.StyleA, 'A', "▄▀█²█▀█");
 
@@ -18,7 +21,7 @@
 
             // D
             StyleHelper.AddAlphabet(FontStyle.StyleA, 'D', "█▀▄²█▄▀");
-            
+
 
             // E
             StyleHelper.AddAlphabet(FontStyle.StyleA, 'E', "█▀▀²██▄");
@@ -43,23 +46,23 @@
             // J
             StyleHelper.AddAlphabet(FontStyle.StyleA, 'J', "  █²█▄█");
 
-            
+
             // K
             StyleHelper.AddAlphabet(FontStyle.StyleA, 'K', "█▄▀²█ █");
 
-            
+
             // L
             StyleHelper.AddAlphabet(FontStyle.StyleA, 'L', "█  ²█▄▄");
 
-            
+
             // M
             StyleHelper.AddAlphabet(FontStyle.StyleA, 'M', "█▀▄▀█²█ ▀ █");
 
-            
+
             // N
             StyleHelper.AddAlphabet(FontStyle.StyleA, 'N', "█▄ █²█ ▀█");
 
-            
+
             // O
             StyleHelper.AddAlphabet(FontStyle.StyleA, 'O', "█▀█²█▄█");
 
@@ -77,9 +80,9 @@
 
 
             // S
-            StyleHelper.AddAlphabet(FontStyle.StyleA, 'S', "█▀²▄█");   
-            
-            
+            StyleHelper.AddAlphabet(FontStyle.StyleA, 'S', "█▀²▄█");
+
+
             // T
             StyleHelper.AddAlphabet(FontStyle.StyleA, 'T', "▀█▀² █ ");
 
@@ -109,6 +112,9 @@
             StyleHelper.AddAlphabet(FontStyle.StyleA, 'Z', "▀█²█▄");
 
 
+
+
+            // Numbers
 
             // 1
             StyleHelper.AddAlphabet(FontStyle.StyleA, '1', "▄█² █");
@@ -140,6 +146,8 @@
 
             // 10
             StyleHelper.AddAlphabet(FontStyle.StyleA, '0', "█▀█²█▄█");
+
+
         }
 
     }

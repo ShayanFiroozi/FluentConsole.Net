@@ -31,6 +31,10 @@ namespace FluentConsoleNet.TestApp
             FluentConsole.FastConsole.PrintSymbolicText("ABCDEFGHIJKLMNOPQRSTUVWXYZ", FontStyle.StyleA, ConsoleColor.DarkCyan);
             FluentConsole.Console.AddLineBreak().Print();
             FluentConsole.FastConsole.PrintSymbolicText("123456789", FontStyle.StyleA, ConsoleColor.Yellow);
+            FluentConsole.Console.AddLineBreak().Print();
+            FluentConsole.FastConsole.PrintSymbolicText(@" ! @ # $ % ^ & * ( ) _ + = - / . , ? > < \ | "" : ; ' ] [ '  ", FontStyle.StyleA, ConsoleColor.Yellow);
+
+            Console.ReadKey();
 
 
             FluentConsole.AttachLogger(fastLogger);
