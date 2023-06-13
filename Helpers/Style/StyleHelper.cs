@@ -64,16 +64,25 @@ namespace FluentConsoleNet.Helpers.Style
 
             foreach (char character in text)
             {
+                if (char.IsWhiteSpace(character))
+                {
+                    line1 += "  ";
+                    line2 += "  ";
+
+                    continue;
+                }
+
+
                 if (!char.IsLetterOrDigit(character)) continue;
 
                 try
 
                 {
 
-                    string wholeSmbolicText = GetSymbolicAlphabet(fontStyle, char.ToUpper(character));
+                    string wholeSymbolicText = GetSymbolicAlphabet(fontStyle, char.ToUpper(character));
 
-                    string part1 = wholeSmbolicText.Split('²')[0] + ' ';
-                    string part2 = wholeSmbolicText.Split('²')[1] + ' ';
+                    string part1 = wholeSymbolicText.Split('²')[0] + ' ';
+                    string part2 = wholeSymbolicText.Split('²')[1] + ' ';
 
                     line1 += part1;
                     line2 += part2;

@@ -27,14 +27,23 @@ namespace FluentConsoleNet.TestApp
 
         static async Task Main(string[] args)
         {
-            // Symbolic Style
-            FluentConsole.FastConsole.PrintSymbolicText("ABCDEFGHIJKLMNOPQRSTUVWXYZ", FontStyle.StyleA, ConsoleColor.DarkCyan);
-            FluentConsole.Console.AddLineBreak().Print();
-            FluentConsole.FastConsole.PrintSymbolicText("123456789", FontStyle.StyleA, ConsoleColor.Yellow);
-            FluentConsole.Console.AddLineBreak().Print();
-            FluentConsole.FastConsole.PrintSymbolicText(@" ! @ # $ % ^ & * ( ) _ + = - / . , ? > < \ | "" : ; ' ] [ '  ", FontStyle.StyleA, ConsoleColor.Yellow);
+            // Symbolic Stylish Text
 
-            Console.ReadKey();
+            FluentConsole.Console.AddLineBreak(3).Print();
+
+            FluentConsole.FastConsole.PrintSymbolicText("Fluent Console For .Net", FontStyle.StyleA, ConsoleColor.DarkCyan);
+            
+            FluentConsole.Console.AddLineBreak(3).Print();
+
+            FluentConsole.FastConsole.PrintSymbolicText("I AM A STYLISH TEXT", FontStyle.StyleA, ConsoleColor.Yellow);
+
+
+            FluentConsole.Console
+                         .AddLineBreak(3)
+                         .WithFontColor(ConsoleColor.Green)
+                         .WriteLine("Press any key to start printing test !").Print();
+
+            FluentConsole.Console.ReadKey();
 
 
             FluentConsole.AttachLogger(fastLogger);

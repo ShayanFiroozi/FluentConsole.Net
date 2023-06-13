@@ -8,7 +8,7 @@
     <ApplicationIcon>command.ico</ApplicationIcon>
     <PackageIcon>command.png</PackageIcon>
     <Title>FluentConsole.Net  , Using .Net Console In Elegant Way !</Title>
-    <Version>1.0.8562.1</Version>
+    <Version>1.0.8564</Version>
     <Authors>Shayan Firoozi &lt;shayan.firoozi@gmail.com&gt;</Authors>
     <Company>TrendSoft®</Company>
     <Description>Using .Net Console with fluent builder interface with many extension methods.</Description>
@@ -16,16 +16,8 @@
     <PackageProjectUrl>https://github.com/ShayanFiroozi/FluentConsole.Net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ShayanFiroozi/FluentConsole.Net</RepositoryUrl>
     <PackageReadmeFile>README-Nuget.md</PackageReadmeFile>
-    <PackageReleaseNotes>✔ 1.1.8562.1 ( 2023-06-11 ) - BugFixed verison of 1.1.8562
-
-   ➕  Add "FastConsole" class to print message(s) very easy :
-
-     →  PrintText(string text, bool IncludeDateTime = true)
-     → PrintInfo(string info, bool IncludeDateTime = true)
-     → PrintWarning(string warning, bool IncludeDateTime = true)
-     → PrintError(string error, bool IncludeDateTime = true)
-     → PrintDebug(string error, bool IncludeDateTime = true)
-     → PrintException(Exception exception, bool IncludeDateTime = true, bool JsonFormat = true)</PackageReleaseNotes>
+    <PackageReleaseNotes>## ✔ 1.1.8562 ( 2023-06-13 )
+     ➕ Add Symbolic Styles for Console (Only alphabets and numbers are available).</PackageReleaseNotes>
     <PackageTags>console;csharp;dotnet;net7;net6;net48;fluent;helper;c#</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>

@@ -103,6 +103,14 @@ greatest.WriteLineOnConsole();
  
  ```   
 
+ - **Symbolic Print with Style** methods 👇    
+ 
+ ```csharp
+
+FluentConsole.FastConsole.PrintSymbolicText("I AM A STYLISH TEXT", FontStyle.StyleA, ConsoleColor.DarkCyan);
+
+ ```  
+
  
 ## GitHub Repository
 Please visit FluentConsole.Net Github repository for source code and more info : [**FluentConsole.Net On GitHub**](https://github.com/ShayanFiroozi/FluentConsole.Net)

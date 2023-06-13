@@ -28,7 +28,7 @@
 
 
             // F
-            StyleHelper.AddAlphabet(FontStyle.StyleA, 'F', "█▀▀²█▀");
+            StyleHelper.AddAlphabet(FontStyle.StyleA, 'F', "█▀²█▀");
 
 
             // G

@@ -127,8 +127,15 @@ greatest.WriteLineOnConsole();
  FluentConsole.FastConsole.PrintInfo("This is a Fast Info Text !");
  
  ```   
+
+- **Symbolic Print with Style** methods 👇    
  
- 
+ ```csharp
+
+FluentConsole.FastConsole.PrintSymbolicText("I AM A STYLISH TEXT", FontStyle.StyleA, ConsoleColor.DarkCyan);
+
+ ```  
+
  
 <br/>
 

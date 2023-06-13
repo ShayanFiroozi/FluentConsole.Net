@@ -1,6 +1,10 @@
 # FluentConsole.Net Change Log :
 </br>
 
+   ## ✔ 1.1.8562 ( 2023-06-13 )
+   * Add Symbolic Styles Text for Console (Only alphabets and numbers are available).
+
+
    ## ✔ 1.1.8562 ( 2023-06-11 )
    * Add **FastConsole** feature to print message(s) very easy :
      - **PrintText**(string text, bool IncludeDateTime = true)
