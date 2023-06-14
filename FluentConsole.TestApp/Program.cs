@@ -32,14 +32,14 @@ namespace FluentConsoleNet.TestApp
             FluentConsole.Console.AddLineBreak(3).Print();
 
             Builder.FastConsole.PrintSymbolicText("Fluent Console For .Net", FontStyle.StyleA, ConsoleColor.DarkCyan);
-            
+
             FluentConsole.Console.AddLineBreak(3).Print();
 
             Builder.FastConsole.PrintSymbolicText("I AM A STYLISH TEXT", FontStyle.StyleA, ConsoleColor.Yellow);
 
             FluentConsole.Console.AddLineBreak().Print();
 
-            Builder.FastConsole.PrintText("Press any key to test the \"Fast Console !\"\n",false);
+            Builder.FastConsole.PrintText("Press any key to test the \"Fast Console !\"\n", false);
             FluentConsole.Console.ReadKey();
 
 
@@ -67,7 +67,7 @@ namespace FluentConsoleNet.TestApp
                 await Task.Run(() =>
                  {
 
-                     Builder.FastConsole.PrintText("This is a Fast Simple Text !",false);
+                     Builder.FastConsole.PrintText("This is a Fast Simple Text !", false);
 
                      FluentConsole.Console
                                   .AddLineBreak(2)

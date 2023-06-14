@@ -8,7 +8,7 @@
     <ApplicationIcon>command.ico</ApplicationIcon>
     <PackageIcon>command.png</PackageIcon>
     <Title>FluentConsole.Net  , Using .Net Console In Elegant Way !</Title>
-    <Version>1.0.8565</Version>
+    <Version>1.0.8565.1</Version>
     <Authors>Shayan Firoozi &lt;shayan.firoozi@gmail.com&gt;</Authors>
     <Company>TrendSoft®</Company>
     <Description>Using .Net Console with fluent builder interface with many extension methods.</Description>

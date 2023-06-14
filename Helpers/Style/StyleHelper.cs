@@ -1,15 +1,13 @@
-﻿using FluentConsoleNet.Helpers.Style;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace FluentConsoleNet.Helpers.Style
 {
     internal static class StyleHelper
     {
-        internal readonly static List<SymbolicStyleModel> SymbolicStylesList = new List<SymbolicStyleModel>();
+        internal static readonly List<SymbolicStyleModel> SymbolicStylesList = new List<SymbolicStyleModel>();
 
 
         private static void InitializeAllStyles()
@@ -85,7 +83,7 @@ namespace FluentConsoleNet.Helpers.Style
                     line1.Append(part1);
                     line2.Append(part2);
                 }
-                catch 
+                catch
                 {
                     // If error occured filled the failed character with itself !
                     line1.Append(character);
