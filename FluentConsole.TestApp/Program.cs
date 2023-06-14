@@ -1,4 +1,5 @@
-﻿using FluentConsoleNet.ConsoleExtension;
+﻿using FluentConsoleNet.Builder;
+using FluentConsoleNet.ConsoleExtension;
 using FluentConsoleNet.Helpers.Style;
 using System;
 using System.Collections.Generic;
@@ -31,33 +32,32 @@ namespace FluentConsoleNet.TestApp
 
             FluentConsole.Console.AddLineBreak(3).Print();
 
-            Builder.FastConsole.PrintSymbolicText("Fluent Console For .Net", FontStyle.StyleA, ConsoleColor.DarkCyan);
+            FastConsole.PrintSymbolicText("Fluent Console For .Net", FontStyle.StyleA, ConsoleColor.DarkCyan);
 
             FluentConsole.Console.AddLineBreak(3).Print();
 
-            Builder.FastConsole.PrintSymbolicText("I AM A STYLISH TEXT", FontStyle.StyleA, ConsoleColor.Yellow);
+            FastConsole.PrintSymbolicText("I AM A STYLISH TEXT", FontStyle.StyleA, ConsoleColor.Yellow);
 
             FluentConsole.Console.AddLineBreak().Print();
 
-            Builder.FastConsole.PrintText("Press any key to test the \"Fast Console !\"\n", false);
-            FluentConsole.Console.ReadKey();
+            FastConsole.PrintText("Press any key to test the \"Fast Console !\"\n", false);
+            Console.ReadKey();
 
+            FastConsole.PrintText("This is a Normal text !\n");
+            FastConsole.PrintInfo("This is an Info text !\n");
+            FastConsole.PrintNote("This is a Note text !\n");
+            FastConsole.PrintTodo("This is a Todo text !\n");
+            FastConsole.PrintWarning("This is a Warning message !\n");
+            FastConsole.PrintAlert("This is an Alert message !\n");
+            FastConsole.PrintDebug("This is a Debug message !\n");
+            FastConsole.PrintError("This is an Error message !\n");
+            FastConsole.PrintException(new InvalidCastException("This is a test Exception from \"FluentConsole.Net\"\n"));
+            FastConsole.PrintSystem("This is a System message!\n");
+            FastConsole.PrintSecurity("This is a Security message!\n");
 
-            Builder.FastConsole.PrintText("This is a Normal text !\n");
-            Builder.FastConsole.PrintInfo("This is an Info text !\n");
-            Builder.FastConsole.PrintNote("This is a Note text !\n");
-            Builder.FastConsole.PrintTodo("This is a Todo text !\n");
-            Builder.FastConsole.PrintWarning("This is an Warning message !\n");
-            Builder.FastConsole.PrintAlert("This is an Alert message !\n");
-            Builder.FastConsole.PrintDebug("This is a Debug message !\n");
-            Builder.FastConsole.PrintError("This is an Error message !\n");
-            Builder.FastConsole.PrintException(new InvalidCastException("This is a test Exception from \"FluentConsole.Net\"\n"));
-            Builder.FastConsole.PrintSystem("This is a System message!\n");
-            Builder.FastConsole.PrintSecurity("This is a Security message!\n");
+            FastConsole.PrintText("Press any key to start the crazy test of \"FluentConsole.Net\" !");
 
-            Builder.FastConsole.PrintText("Press any key to start the crazy test of \"FluentConsole.Net\" !");
-
-            FluentConsole.Console.ReadKey();
+            Console.ReadKey();
 
             FluentConsole.AttachLogger(fastLogger);
 
@@ -67,7 +67,7 @@ namespace FluentConsoleNet.TestApp
                 await Task.Run(() =>
                  {
 
-                     Builder.FastConsole.PrintText("This is a Fast Simple Text !", false);
+                     FastConsole.PrintText("This is a Fast Simple Text !", false);
 
                      FluentConsole.Console
                                   .AddLineBreak(2)
@@ -87,7 +87,7 @@ namespace FluentConsoleNet.TestApp
 
                 await Task.Run(() =>
                  {
-                     Builder.FastConsole.PrintWarning("This is a Fast Warning Text !");
+                     FastConsole.PrintWarning("This is a Fast Warning Text !");
 
 
                      FluentConsole.Console
@@ -101,13 +101,23 @@ namespace FluentConsoleNet.TestApp
 
                      greatest.WriteLineOnConsole();
 
-                     Builder.FastConsole.PrintException(new InvalidTimeZoneException("This is my test exception"), false);
+                     FastConsole.PrintException(new InvalidTimeZoneException("This is my test exception"), false);
 
                  });
 
                 await Task.Run(() =>
                  {
-                     Builder.FastConsole.PrintError("This is a Fast Error Text !");
+                     FastConsole.PrintText("This is a Normal text !\n");
+                     FastConsole.PrintInfo("This is an Info text !\n");
+                     FastConsole.PrintNote("This is a Note text !\n");
+                     FastConsole.PrintTodo("This is a Todo text !\n");
+                     FastConsole.PrintWarning("This is an Warning message !\n");
+                     FastConsole.PrintAlert("This is an Alert message !\n");
+                     FastConsole.PrintDebug("This is a Debug message !\n");
+                     FastConsole.PrintError("This is an Error message !\n");
+                     FastConsole.PrintException(new InvalidCastException("This is a test Exception from \"FluentConsole.Net\"\n"));
+                     FastConsole.PrintSystem("This is a System message!\n");
+                     FastConsole.PrintSecurity("This is a Security message!\n");
 
                      FluentConsole.Console
                      .AddLineBreak(2)
@@ -120,15 +130,15 @@ namespace FluentConsoleNet.TestApp
 
                      numbers.WriteLineOnConsole(true);
 
-                     Builder.FastConsole.PrintException(new InvalidTimeZoneException("This is my test exception"), false);
+                     FastConsole.PrintException(new InvalidTimeZoneException("This is my test exception"), false);
 
                  });
 
                 await Task.Run(() =>
                   {
 
-                      Builder.FastConsole.PrintDebug("This is a Fast Debug Text !");
-                      Builder.FastConsole.PrintInfo("This is a Fast Info Text !");
+                      FastConsole.PrintDebug("This is a Fast Debug Text !");
+                      FastConsole.PrintInfo("This is a Fast Info Text !");
 
                       FluentConsole.Console
                       .AddLineBreak(2)
@@ -141,7 +151,7 @@ namespace FluentConsoleNet.TestApp
 
                       numbers.WriteLineOnConsole(false);
 
-                      Builder.FastConsole.PrintException(new InvalidTimeZoneException("This is my test exception"), false);
+                      FastConsole.PrintException(new InvalidTimeZoneException("This is my test exception"), false);
 
                   });
 

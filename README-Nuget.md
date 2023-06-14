@@ -83,25 +83,33 @@ greatest.WriteLineOnConsole();
 
 ```  
 
-- **Fast Print** methods 👇    
+- **FastConsole** methods 👇    
  
  ```csharp
  
- FluentConsole.FastConsole.PrintDebug("This is a Fast Debug Text !");
+FastConsole.PrintText("This is a Normal text !\n");
+
+FastConsole.PrintInfo("This is an Info text !\n");
+
+FastConsole.PrintNote("This is a Note text !\n");
+
+FastConsole.PrintTodo("This is a Todo text !\n");
+
+FastConsole.PrintWarning("This is a Warning message !\n");
+
+FastConsole.PrintAlert("This is an Alert message !\n");
+
+FastConsole.PrintDebug("This is a Debug message !\n");
+
+FastConsole.PrintError("This is an Error message !\n");
+
+FastConsole.PrintException(new InvalidCastException("This is a test Exception from \"FluentConsole.Net\"\n"));
+
+FastConsole.PrintSystem("This is a System message!\n");
+
+FastConsole.PrintSecurity("This is a Security message!\n");
  
- FluentConsole.FastConsole.PrintInfo("This is a Fast Info Text !");
- 
- FluentConsole.FastConsole.PrintWarning("This is a Fast Warning Text !");
- 
- FluentConsole.FastConsole.PrintException(new InvalidTimeZoneException("This is my test exception"), IncludeDateTime: true, JsonFormat: true);
- 
- FluentConsole.FastConsole.PrintError("This is a Fast Error Text !");
- 
- FluentConsole.FastConsole.PrintDebug("This is a Fast Debug Text !");
- 
- FluentConsole.FastConsole.PrintInfo("This is a Fast Info Text !");
- 
- ```   
+ ```  
 
  - **Symbolic Print with Style** methods 👇    
  

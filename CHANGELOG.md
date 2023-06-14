@@ -1,6 +1,12 @@
 # FluentConsole.Net Change Log :
 </br>
 
+   ## ✔ 1.1.8566 ( 2023-06-15 )
+   * Change **FastConsole** to static class.
+   * Update **FastConsole** colors.
+   * Add **DetachLogger()** method.
+   * Update **Test App.**
+   * 
 
    ## ✔ 1.1.8565 ( 2023-06-14 )
    * Change **FastLog** DateTime format.
