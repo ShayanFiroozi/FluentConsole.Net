@@ -8,7 +8,7 @@
     <ApplicationIcon>command.ico</ApplicationIcon>
     <PackageIcon>command.png</PackageIcon>
     <Title>FluentConsole.Net  , Using .Net Console In Elegant Way !</Title>
-    <Version>1.0.8564</Version>
+    <Version>1.0.8565</Version>
     <Authors>Shayan Firoozi &lt;shayan.firoozi@gmail.com&gt;</Authors>
     <Company>TrendSoft®</Company>
     <Description>Using .Net Console with fluent builder interface with many extension methods.</Description>
@@ -16,8 +16,8 @@
     <PackageProjectUrl>https://github.com/ShayanFiroozi/FluentConsole.Net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ShayanFiroozi/FluentConsole.Net</RepositoryUrl>
     <PackageReadmeFile>README-Nuget.md</PackageReadmeFile>
-    <PackageReleaseNotes>## ✔ 1.1.8562 ( 2023-06-13 )
-     ➕ Add Symbolic Styles for Console (Only alphabets and numbers are available).</PackageReleaseNotes>
+    <PackageReleaseNotes>✔ 1.1.8562 ( 2023-06-14 )
+❌ Change "FastLog" DateTime format.</PackageReleaseNotes>
     <PackageTags>console;csharp;dotnet;net7;net6;net48;fluent;helper;c#</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>

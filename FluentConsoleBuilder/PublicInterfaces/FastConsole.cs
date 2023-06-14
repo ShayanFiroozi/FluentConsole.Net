@@ -19,8 +19,8 @@ namespace FluentConsoleNet.Builder
 {
     public sealed class FastConsole
     {
-        private const ConsoleColor DateTimeColor = ConsoleColor.DarkGreen;
-        private const string DateTimeFormat = "yyyy-MM-dd HH:mm:ss →";
+        private const ConsoleColor DateTimeColor = ConsoleColor.Green;
+        private const string DateTimeFormat = "yyyy-MM-dd HH:mm:ss :";
 
         public void PrintText(string text, bool IncludeDateTime = true)
         {
@@ -58,7 +58,7 @@ namespace FluentConsoleNet.Builder
                              .ResetColor()
                              .AddSpace(1)
                              .WithBackColor(ConsoleColor.DarkGreen)
-                             .Write("INFO:")
+                             .Write("INFO →")
                              .ResetColor()
                              .AddSpace(1)
                              .WithFontColor(ConsoleColor.Cyan)
@@ -70,7 +70,7 @@ namespace FluentConsoleNet.Builder
             {
                 FluentConsole.Console
                              .WithBackColor(ConsoleColor.DarkGreen)
-                             .Write("INFO:")
+                             .Write("INFO →")
                              .ResetColor()
                              .AddSpace(1)
                              .WithFontColor(ConsoleColor.Cyan)
@@ -93,7 +93,7 @@ namespace FluentConsoleNet.Builder
                              .ResetColor()
                              .AddSpace(1)
                              .WithBackColor(ConsoleColor.DarkRed)
-                             .Write("WARNING:")
+                             .Write("WARNING →")
                              .ResetColor()
                              .AddSpace(1)
                              .WithFontColor(ConsoleColor.Yellow)
@@ -105,7 +105,7 @@ namespace FluentConsoleNet.Builder
             {
                 FluentConsole.Console
                              .WithBackColor(ConsoleColor.DarkRed)
-                             .Write("WARNING:")
+                             .Write("WARNING →")
                              .ResetColor()
                              .AddSpace(1)
                              .WithFontColor(ConsoleColor.Yellow)
@@ -128,7 +128,7 @@ namespace FluentConsoleNet.Builder
                              .ResetColor()
                              .AddSpace(1)
                              .WithBackColor(ConsoleColor.DarkRed)
-                             .Write("ERROR:")
+                             .Write("ERROR →")
                              .ResetColor()
                              .AddSpace(1)
                              .WithFontColor(ConsoleColor.Red)
@@ -140,7 +140,7 @@ namespace FluentConsoleNet.Builder
             {
                 FluentConsole.Console
                              .WithBackColor(ConsoleColor.DarkRed)
-                             .Write("ERROR:")
+                             .Write("ERROR →")
                              .ResetColor()
                              .AddSpace(1)
                              .WithFontColor(ConsoleColor.Red)
@@ -163,7 +163,7 @@ namespace FluentConsoleNet.Builder
                              .ResetColor()
                              .AddSpace(1)
                              .WithBackColor(ConsoleColor.DarkMagenta)
-                             .Write("DEBUG:")
+                             .Write("DEBUG →")
                              .ResetColor()
                              .AddSpace(1)
                              .WithFontColor(ConsoleColor.DarkGray)
@@ -175,7 +175,7 @@ namespace FluentConsoleNet.Builder
             {
                 FluentConsole.Console
                              .WithBackColor(ConsoleColor.DarkMagenta)
-                             .Write("DEBUG:")
+                             .Write("DEBUG →")
                              .ResetColor()
                              .AddSpace(1)
                              .WithFontColor(ConsoleColor.DarkGray)
@@ -198,7 +198,7 @@ namespace FluentConsoleNet.Builder
                              .ResetColor()
                              .AddSpace(1)
                              .WithBackColor(ConsoleColor.Red)
-                             .Write("EXCEPTION:")
+                             .Write("EXCEPTION →")
                              .ResetColor()
                              .AddLineBreak(1)
                               .WithFontColor(ConsoleColor.Red)
@@ -210,7 +210,7 @@ namespace FluentConsoleNet.Builder
             {
                 FluentConsole.Console
                              .WithBackColor(ConsoleColor.Red)
-                             .Write("EXCEPTION:")
+                             .Write("EXCEPTION →")
                              .ResetColor()
                              .AddLineBreak(1)
                              .WithFontColor(ConsoleColor.Red)

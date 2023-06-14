@@ -37,14 +37,23 @@ namespace FluentConsoleNet.TestApp
 
             FluentConsole.FastConsole.PrintSymbolicText("I AM A STYLISH TEXT", FontStyle.StyleA, ConsoleColor.Yellow);
 
+            FluentConsole.Console.AddLineBreak().Print();
 
-            FluentConsole.Console
-                         .AddLineBreak(3)
-                         .WithFontColor(ConsoleColor.Green)
-                         .WriteLine("Press any key to start printing test !").Print();
-
+            FluentConsole.FastConsole.PrintText("Press any key to test the \"Fast Console !\"\n",false);
             FluentConsole.Console.ReadKey();
 
+
+            FluentConsole.FastConsole.PrintText("This is a normal text !\n");
+            FluentConsole.FastConsole.PrintInfo("This is an info text !\n");
+            FluentConsole.FastConsole.PrintDebug("This is a Debug message !\n");
+            FluentConsole.FastConsole.PrintWarning("This is an Warning message !\n");
+            FluentConsole.FastConsole.PrintError("This is an Error !\n");
+            FluentConsole.FastConsole.PrintException(new InvalidCastException("This is a test Exception from \"FluentConsole.Net\"\n"));
+
+
+            FluentConsole.FastConsole.PrintText("Press any key to start the crazy test of \"FluentConsole.Net\" !");
+
+            FluentConsole.Console.ReadKey();
 
             FluentConsole.AttachLogger(fastLogger);
 
@@ -54,7 +63,7 @@ namespace FluentConsoleNet.TestApp
                 await Task.Run(() =>
                  {
 
-                     FluentConsole.FastConsole.PrintText("This is a Fast Simple Text !");
+                     FluentConsole.FastConsole.PrintText("This is a Fast Simple Text !",false);
 
                      FluentConsole.Console
                                   .AddLineBreak(2)
