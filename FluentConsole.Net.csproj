@@ -16,8 +16,12 @@
     <PackageProjectUrl>https://github.com/ShayanFiroozi/FluentConsole.Net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ShayanFiroozi/FluentConsole.Net</RepositoryUrl>
     <PackageReadmeFile>README-Nuget.md</PackageReadmeFile>
-    <PackageReleaseNotes>✔ 1.1.8562 ( 2023-06-14 )
-❌ Change "FastLog" DateTime format.</PackageReleaseNotes>
+    <PackageReleaseNotes>✔ 1.1.8566 ( 2023-06-15 )
+
+  Change "FastConsole" to static class.
+  Update "FastConsole" colors.
+  Add "DetachLogger()" method.
+  Update "Test App."</PackageReleaseNotes>
     <PackageTags>console;csharp;dotnet;net7;net6;net48;fluent;helper;c#</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
