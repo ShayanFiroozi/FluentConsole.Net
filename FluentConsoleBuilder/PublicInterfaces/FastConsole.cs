@@ -22,7 +22,8 @@ namespace FluentConsoleNet.Builder
         private const ConsoleColor DateTimeColor = ConsoleColor.Green;
         private const string DateTimeFormat = "yyyy-MM-dd HH:mm:ss :";
 
-        public void PrintText(string text, bool IncludeDateTime = true)
+
+        public static void PrintText(string text, bool IncludeDateTime = true)
         {
 
             if (IncludeDateTime)
@@ -33,21 +34,21 @@ namespace FluentConsoleNet.Builder
                              .ResetColor()
                              .AddSpace(1)
                              .WriteLine(text)
-                             .PrintAndLog();
+                             .Print();
             }
 
             else
             {
                 FluentConsole.Console
-                            .WriteLine(text)
-                            .PrintAndLog();
+                             .WriteLine(text)
+                             .Print();
             }
 
 
         }
 
 
-        public void PrintInfo(string info, bool IncludeDateTime = true)
+        public static void PrintNote(string note, bool IncludeDateTime = true)
         {
 
             if (IncludeDateTime)
@@ -57,32 +58,145 @@ namespace FluentConsoleNet.Builder
                              .Write(DateTime.Now.ToString(DateTimeFormat))
                              .ResetColor()
                              .AddSpace(1)
-                             .WithBackColor(ConsoleColor.DarkGreen)
-                             .Write("INFO →")
+                             .WithBackColor(ConsoleColor.White)
+                             .WithFontColor(ConsoleColor.DarkGreen)
+                             .Write("NOTE →")
                              .ResetColor()
                              .AddSpace(1)
-                             .WithFontColor(ConsoleColor.Cyan)
-                             .WriteLine(info)
-                             .PrintAndLog();
+                             .WithFontColor(ConsoleColor.White)
+                             .WriteLine(note)
+                             .Print();
             }
 
             else
             {
                 FluentConsole.Console
-                             .WithBackColor(ConsoleColor.DarkGreen)
-                             .Write("INFO →")
+                             .WithBackColor(ConsoleColor.White)
+                             .WithFontColor(ConsoleColor.DarkGreen)
+                             .Write("NOTE →")
                              .ResetColor()
                              .AddSpace(1)
-                             .WithFontColor(ConsoleColor.Cyan)
-                             .WriteLine(info)
-                             .PrintAndLog();
+                             .WithFontColor(ConsoleColor.White)
+                             .WriteLine(note)
+                             .Print();
             }
 
 
         }
 
 
-        public void PrintWarning(string warning, bool IncludeDateTime = true)
+        public static void PrintTodo(string todo, bool IncludeDateTime = true)
+        {
+
+            if (IncludeDateTime)
+            {
+                FluentConsole.Console
+                             .WithFontColor(DateTimeColor)
+                             .Write(DateTime.Now.ToString(DateTimeFormat))
+                             .ResetColor()
+                             .AddSpace(1)
+                             .WithBackColor(ConsoleColor.White)
+                             .WithFontColor(ConsoleColor.DarkMagenta)
+                             .Write("TODO →")
+                             .ResetColor()
+                             .AddSpace(1)
+                             .WithFontColor(ConsoleColor.White)
+                             .WriteLine(todo)
+                             .Print();
+            }
+
+            else
+            {
+                FluentConsole.Console
+                             .WithBackColor(ConsoleColor.White)
+                             .WithFontColor(ConsoleColor.DarkMagenta)
+                             .Write("TODO →")
+                             .ResetColor()
+                             .AddSpace(1)
+                             .WithFontColor(ConsoleColor.White)
+                             .WriteLine(todo)
+                             .Print();
+            }
+
+
+        }
+
+
+        public static void PrintInfo(string info, bool IncludeDateTime = true)
+        {
+
+            if (IncludeDateTime)
+            {
+                FluentConsole.Console
+                             .WithFontColor(DateTimeColor)
+                             .Write(DateTime.Now.ToString(DateTimeFormat))
+                             .ResetColor()
+                             .AddSpace(1)
+                             .WithBackColor(ConsoleColor.White)
+                             .WithFontColor(ConsoleColor.DarkCyan)
+                             .Write("INFO →")
+                             .ResetColor()
+                             .AddSpace(1)
+                             .WithFontColor(ConsoleColor.White)
+                             .WriteLine(info)
+                             .Print();
+            }
+
+            else
+            {
+                FluentConsole.Console
+                             .WithBackColor(ConsoleColor.White)
+                             .WithFontColor(ConsoleColor.DarkCyan)
+                             .Write("INFO →")
+                             .ResetColor()
+                             .AddSpace(1)
+                             .WithFontColor(ConsoleColor.White)
+                             .WriteLine(info)
+                             .Print();
+            }
+
+
+        }
+
+
+        public static void PrintWarning(string warning, bool IncludeDateTime = true)
+        {
+
+            if (IncludeDateTime)
+            {
+                FluentConsole.Console
+                             .WithFontColor(DateTimeColor)
+                             .Write(DateTime.Now.ToString(DateTimeFormat))
+                             .ResetColor()
+                             .AddSpace(1)
+                             .WithBackColor(ConsoleColor.Yellow)
+                             .WithFontColor(ConsoleColor.DarkRed)
+                             .Write("WARNING →")
+                             .ResetColor()
+                             .AddSpace(1)
+                             .WithFontColor(ConsoleColor.Yellow)
+                             .WriteLine(warning)
+                             .Print();
+            }
+
+            else
+            {
+                FluentConsole.Console
+                             .WithBackColor(ConsoleColor.Yellow)
+                             .WithFontColor(ConsoleColor.DarkRed)
+                             .Write("WARNING →")
+                             .ResetColor()
+                             .AddSpace(1)
+                             .WithFontColor(ConsoleColor.Yellow)
+                             .WriteLine(warning)
+                             .Print();
+            }
+
+
+        }
+
+
+        public static void PrintAlert(string alert, bool IncludeDateTime = true)
         {
 
             if (IncludeDateTime)
@@ -93,31 +207,31 @@ namespace FluentConsoleNet.Builder
                              .ResetColor()
                              .AddSpace(1)
                              .WithBackColor(ConsoleColor.DarkRed)
-                             .Write("WARNING →")
+                             .Write("ALERT →")
                              .ResetColor()
                              .AddSpace(1)
                              .WithFontColor(ConsoleColor.Yellow)
-                             .WriteLine(warning)
-                             .PrintAndLog();
+                             .WriteLine(alert)
+                             .Print();
             }
 
             else
             {
                 FluentConsole.Console
                              .WithBackColor(ConsoleColor.DarkRed)
-                             .Write("WARNING →")
+                             .Write("ALERT →")
                              .ResetColor()
                              .AddSpace(1)
                              .WithFontColor(ConsoleColor.Yellow)
-                             .WriteLine(warning)
-                             .PrintAndLog();
+                             .WriteLine(alert)
+                             .Print();
             }
 
 
         }
 
 
-        public void PrintError(string error, bool IncludeDateTime = true)
+        public static void PrintError(string error, bool IncludeDateTime = true)
         {
 
             if (IncludeDateTime)
@@ -133,7 +247,7 @@ namespace FluentConsoleNet.Builder
                              .AddSpace(1)
                              .WithFontColor(ConsoleColor.Red)
                              .WriteLine(error)
-                             .PrintAndLog();
+                             .Print();
             }
 
             else
@@ -145,14 +259,14 @@ namespace FluentConsoleNet.Builder
                              .AddSpace(1)
                              .WithFontColor(ConsoleColor.Red)
                              .WriteLine(error)
-                             .PrintAndLog();
+                             .Print();
             }
 
 
         }
 
 
-        public void PrintDebug(string debug, bool IncludeDateTime = true)
+        public static void PrintDebug(string debug, bool IncludeDateTime = true)
         {
 
             if (IncludeDateTime)
@@ -168,7 +282,7 @@ namespace FluentConsoleNet.Builder
                              .AddSpace(1)
                              .WithFontColor(ConsoleColor.DarkGray)
                              .WriteLine(debug)
-                             .PrintAndLog();
+                             .Print();
             }
 
             else
@@ -180,49 +294,158 @@ namespace FluentConsoleNet.Builder
                              .AddSpace(1)
                              .WithFontColor(ConsoleColor.DarkGray)
                              .WriteLine(debug)
-                             .PrintAndLog();
+                             .Print();
             }
 
 
         }
 
 
-        public void PrintException(Exception exception, bool IncludeDateTime = true, bool JsonFormat = true)
+        public static void PrintException(Exception exception,
+                                          bool IncludeDateTime = true,
+                                          bool JsonFormat = true,
+                                          bool BriefMode = true)
         {
 
             if (IncludeDateTime)
             {
-                FluentConsole.Console
-                             .WithFontColor(DateTimeColor)
-                             .Write(DateTime.Now.ToString(DateTimeFormat))
-                             .ResetColor()
-                             .AddSpace(1)
+
+                if (BriefMode)
+                {
+                    FluentConsole.Console
+                                 .WithFontColor(DateTimeColor)
+                                 .Write(DateTime.Now.ToString(DateTimeFormat))
+                                 .ResetColor()
+                                 .AddSpace(1)
+                                 .WithBackColor(ConsoleColor.Red)
+                                 .Write("EXCEPTION →")
+                                 .ResetColor()
+                                 .AddSpace()
+                                 .WithFontColor(ConsoleColor.Red)
+                                 .WriteLine(exception.Message)
+                                 .Print();
+                }
+                else
+                {
+                    FluentConsole.Console
+                                 .WithFontColor(DateTimeColor)
+                                 .Write(DateTime.Now.ToString(DateTimeFormat))
+                                 .ResetColor()
+                                 .AddSpace(1)
+                                 .WithBackColor(ConsoleColor.Red)
+                                 .Write("EXCEPTION →")
+                                 .ResetColor()
+                                 .AddLineBreak(1)
+                                 .WithFontColor(ConsoleColor.Red)
+                                 .WriteLine(exception, JsonFormat)
+                                 .Print();
+                }
+            }
+
+            else
+            {
+                if (BriefMode)
+                {
+                    FluentConsole.Console
                              .WithBackColor(ConsoleColor.Red)
                              .Write("EXCEPTION →")
                              .ResetColor()
-                             .AddLineBreak(1)
-                              .WithFontColor(ConsoleColor.Red)
-                             .WriteLine(exception, JsonFormat)
-                             .PrintAndLog();
-            }
-
-            else
-            {
-                FluentConsole.Console
+                             .AddSpace()
+                             .WithFontColor(ConsoleColor.Red)
+                             .WriteLine(exception.Message)
+                             .Print();
+                }
+                else
+                {
+                    FluentConsole.Console
                              .WithBackColor(ConsoleColor.Red)
                              .Write("EXCEPTION →")
                              .ResetColor()
                              .AddLineBreak(1)
                              .WithFontColor(ConsoleColor.Red)
                              .WriteLine(exception, JsonFormat)
-                             .PrintAndLog();
+                             .Print();
+                }
             }
 
 
         }
 
 
-        public void PrintSymbolicText(string text, FontStyle fontStyle, ConsoleColor color)
+        public static void PrintSystem(string system, bool IncludeDateTime = true)
+        {
+
+            if (IncludeDateTime)
+            {
+                FluentConsole.Console
+                             .WithFontColor(DateTimeColor)
+                             .Write(DateTime.Now.ToString(DateTimeFormat))
+                             .ResetColor()
+                             .AddSpace(1)
+                             .WithBackColor(ConsoleColor.Gray)
+                             .WithFontColor(ConsoleColor.Magenta)
+                             .Write("SYSTEM →")
+                             .ResetColor()
+                             .AddSpace(1)
+                             .WithFontColor(ConsoleColor.Blue)
+                             .WriteLine(system)
+                             .Print();
+            }
+
+            else
+            {
+                FluentConsole.Console
+                             .WithBackColor(ConsoleColor.Gray)
+                             .WithFontColor(ConsoleColor.Magenta)
+                             .Write("SYSTEM →")
+                             .ResetColor()
+                             .AddSpace(1)
+                             .WithFontColor(ConsoleColor.Blue)
+                             .WriteLine(system)
+                             .Print();
+            }
+
+
+        }
+
+        public static void PrintSecurity(string security, bool IncludeDateTime = true)
+        {
+
+            if (IncludeDateTime)
+            {
+                FluentConsole.Console
+                             .WithFontColor(DateTimeColor)
+                             .Write(DateTime.Now.ToString(DateTimeFormat))
+                             .ResetColor()
+                             .AddSpace(1)
+                             .WithBackColor(ConsoleColor.Gray)
+                             .WithFontColor(ConsoleColor.DarkRed)
+                             .Write("SECURITY →")
+                             .ResetColor()
+                             .AddSpace(1)
+                             .WithFontColor(ConsoleColor.Red)
+                             .WriteLine(security)
+                             .Print();
+            }
+
+            else
+            {
+                FluentConsole.Console
+                             .WithBackColor(ConsoleColor.Gray)
+                             .WithFontColor(ConsoleColor.DarkRed)
+                             .Write("SECURITY →")
+                             .ResetColor()
+                             .AddSpace(1)
+                             .WithFontColor(ConsoleColor.Red)
+                             .WriteLine(security)
+                             .Print();
+            }
+
+
+        }
+
+
+        public static void PrintSymbolicText(string text, FontStyle fontStyle, ConsoleColor color)
 
         {
             FluentConsole.Console
