@@ -20,7 +20,7 @@ namespace FluentConsoleNet.Builder
     public sealed class FastConsole
     {
         private const ConsoleColor DateTimeColor = ConsoleColor.Green;
-        private const string DateTimeFormat = "yyyy-MM-dd HH:mm:ss :";
+        private const string DateTimeFormat = "yyyy-MM-dd HH:mm:ss ";
 
 
         public static void PrintText(string text, bool IncludeDateTime = true)
@@ -96,7 +96,7 @@ namespace FluentConsoleNet.Builder
                              .ResetColor()
                              .AddSpace(1)
                              .WithBackColor(ConsoleColor.White)
-                             .WithFontColor(ConsoleColor.DarkMagenta)
+                             .WithFontColor(ConsoleColor.DarkCyan)
                              .Write("TODO →")
                              .ResetColor()
                              .AddSpace(1)
@@ -133,7 +133,7 @@ namespace FluentConsoleNet.Builder
                              .ResetColor()
                              .AddSpace(1)
                              .WithBackColor(ConsoleColor.White)
-                             .WithFontColor(ConsoleColor.DarkCyan)
+                             .WithFontColor(ConsoleColor.DarkMagenta)
                              .Write("INFO →")
                              .ResetColor()
                              .AddSpace(1)
@@ -382,12 +382,12 @@ namespace FluentConsoleNet.Builder
                              .Write(DateTime.Now.ToString(DateTimeFormat))
                              .ResetColor()
                              .AddSpace(1)
-                             .WithBackColor(ConsoleColor.Gray)
-                             .WithFontColor(ConsoleColor.Magenta)
+                             .WithBackColor(ConsoleColor.DarkGray)
+                             .WithFontColor(ConsoleColor.Yellow)
                              .Write("SYSTEM →")
                              .ResetColor()
                              .AddSpace(1)
-                             .WithFontColor(ConsoleColor.Blue)
+                             .WithFontColor(ConsoleColor.DarkCyan)
                              .WriteLine(system)
                              .Print();
             }
@@ -418,12 +418,12 @@ namespace FluentConsoleNet.Builder
                              .Write(DateTime.Now.ToString(DateTimeFormat))
                              .ResetColor()
                              .AddSpace(1)
-                             .WithBackColor(ConsoleColor.Gray)
+                             .WithBackColor(ConsoleColor.White)
                              .WithFontColor(ConsoleColor.DarkRed)
                              .Write("SECURITY →")
                              .ResetColor()
                              .AddSpace(1)
-                             .WithFontColor(ConsoleColor.Red)
+                             .WithFontColor(ConsoleColor.Cyan)
                              .WriteLine(security)
                              .Print();
             }
