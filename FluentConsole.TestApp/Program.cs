@@ -64,7 +64,7 @@ namespace FluentConsoleNet.TestApp
 
             while (true)
             {
-                await Task.Run(() =>
+                _= Task.Run(() =>
                  {
 
                      FastConsole.PrintText("This is a Fast Simple Text !", false);
@@ -85,7 +85,7 @@ namespace FluentConsoleNet.TestApp
 
                  });
 
-                await Task.Run(() =>
+                _= Task.Run(() =>
                  {
                      FastConsole.PrintWarning("This is a Fast Warning Text !");
 
@@ -105,7 +105,7 @@ namespace FluentConsoleNet.TestApp
 
                  });
 
-                await Task.Run(() =>
+                _= Task.Run(() =>
                  {
                      FastConsole.PrintText("This is a Normal text !\n");
                      FastConsole.PrintInfo("This is an Info text !\n");
@@ -134,7 +134,7 @@ namespace FluentConsoleNet.TestApp
 
                  });
 
-                await Task.Run(() =>
+                _= Task.Run(() =>
                   {
 
                       FastConsole.PrintDebug("This is a Fast Debug Text !");

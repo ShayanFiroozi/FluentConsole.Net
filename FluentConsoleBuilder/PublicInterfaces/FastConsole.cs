@@ -15,7 +15,7 @@
 using FluentConsoleNet.Helpers.Style;
 using System;
 
-namespace FluentConsoleNet.Builder
+namespace FluentConsoleNet
 {
     public sealed class FastConsole
     {
@@ -382,12 +382,12 @@ namespace FluentConsoleNet.Builder
                              .Write(DateTime.Now.ToString(DateTimeFormat))
                              .ResetColor()
                              .AddSpace(1)
-                             .WithBackColor(ConsoleColor.DarkGray)
-                             .WithFontColor(ConsoleColor.Yellow)
+                             .WithBackColor(ConsoleColor.White)
+                             .WithFontColor(ConsoleColor.DarkBlue)
                              .Write("SYSTEM →")
                              .ResetColor()
                              .AddSpace(1)
-                             .WithFontColor(ConsoleColor.DarkCyan)
+                             .WithFontColor(ConsoleColor.Cyan)
                              .WriteLine(system)
                              .Print();
             }
@@ -395,12 +395,12 @@ namespace FluentConsoleNet.Builder
             else
             {
                 FluentConsole.Console
-                             .WithBackColor(ConsoleColor.Gray)
-                             .WithFontColor(ConsoleColor.Magenta)
+                             .WithBackColor(ConsoleColor.White)
+                             .WithFontColor(ConsoleColor.DarkBlue)
                              .Write("SYSTEM →")
                              .ResetColor()
                              .AddSpace(1)
-                             .WithFontColor(ConsoleColor.Blue)
+                             .WithFontColor(ConsoleColor.Cyan)
                              .WriteLine(system)
                              .Print();
             }
@@ -423,7 +423,7 @@ namespace FluentConsoleNet.Builder
                              .Write("SECURITY →")
                              .ResetColor()
                              .AddSpace(1)
-                             .WithFontColor(ConsoleColor.Cyan)
+                             .WithFontColor(ConsoleColor.Red)
                              .WriteLine(security)
                              .Print();
             }
@@ -431,7 +431,7 @@ namespace FluentConsoleNet.Builder
             else
             {
                 FluentConsole.Console
-                             .WithBackColor(ConsoleColor.Gray)
+                             .WithBackColor(ConsoleColor.White)
                              .WithFontColor(ConsoleColor.DarkRed)
                              .Write("SECURITY →")
                              .ResetColor()
