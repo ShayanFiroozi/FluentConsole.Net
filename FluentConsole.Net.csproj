@@ -1,66 +1,43 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net7.0;net6.0;net48</TargetFrameworks>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Deterministic>false</Deterministic>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <ApplicationIcon>command.ico</ApplicationIcon>
-    <PackageIcon>command.png</PackageIcon>
-    <Title>FluentConsole.Net  , Using .Net Console In Elegant Way !</Title>
-    <Version>1.0.8568</Version>
-    <Authors>Shayan Firoozi &lt;shayan.firoozi@gmail.com&gt;</Authors>
-    <Company>TrendSoft®</Company>
-    <Description>Using .Net Console with fluent builder interface with many extension methods.</Description>
-    <Copyright>Copyright © 2023 TrendSoft® (MIT License)</Copyright>
-    <PackageProjectUrl>https://github.com/ShayanFiroozi/FluentConsole.Net</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/ShayanFiroozi/FluentConsole.Net</RepositoryUrl>
-    <PackageReadmeFile>README-Nuget.md</PackageReadmeFile>
-    <PackageReleaseNotes>Update "FastConsole" Colors.</PackageReleaseNotes>
-    <PackageTags>console;csharp;dotnet;net7;net6;net48;fluent;helper;c#</PackageTags>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+    <Platforms>x86;x64</Platforms>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Console.Net.TestApp\**" />
-    <Compile Remove="FluentConsole.TestApp\**" />
-    <EmbeddedResource Remove="Console.Net.TestApp\**" />
-    <EmbeddedResource Remove="FluentConsole.TestApp\**" />
-    <None Remove="Console.Net.TestApp\**" />
-    <None Remove="FluentConsole.TestApp\**" />
-  </ItemGroup>
 
-  <ItemGroup>
-    <None Remove="CHANGELOG.md" />
-    <None Remove="DONATIONS.md" />
-    <None Remove="LICENSE.md" />
-    <None Remove="README.md" />
-    <None Remove="ToDo.md" />
-  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>True</Optimize>
+  </PropertyGroup>
 
-  <ItemGroup>
-    <Content Include="command.ico" />
-  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>True</Optimize>
+  </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" Condition="'$(TargetFramework)' == 'net48'" />
-  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+  </PropertyGroup>
 
-  <ItemGroup>
-    <None Include="command.ico">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="command.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="README-Nuget.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+
 
 </Project>
