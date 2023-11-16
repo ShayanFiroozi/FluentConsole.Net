@@ -1,5 +1,4 @@
-﻿using FluentConsoleNet.Builder;
-using FluentConsoleNet.ConsoleExtension;
+﻿using FluentConsoleNet.ConsoleExtension;
 using FluentConsoleNet.Helpers.Style;
 using System;
 using System.Collections.Generic;
@@ -64,7 +63,7 @@ namespace FluentConsoleNet.TestApp
 
             while (true)
             {
-                _= Task.Run(() =>
+                _ = Task.Run(() =>
                  {
 
                      FastConsole.PrintText("This is a Fast Simple Text !", false);
@@ -85,7 +84,7 @@ namespace FluentConsoleNet.TestApp
 
                  });
 
-                _= Task.Run(() =>
+                _ = Task.Run(() =>
                  {
                      FastConsole.PrintWarning("This is a Fast Warning Text !");
 
@@ -105,7 +104,7 @@ namespace FluentConsoleNet.TestApp
 
                  });
 
-                _= Task.Run(() =>
+                _ = Task.Run(() =>
                  {
                      FastConsole.PrintText("This is a Normal text !\n");
                      FastConsole.PrintInfo("This is an Info text !\n");
@@ -134,7 +133,7 @@ namespace FluentConsoleNet.TestApp
 
                  });
 
-                _= Task.Run(() =>
+                _ = Task.Run(() =>
                   {
 
                       FastConsole.PrintDebug("This is a Fast Debug Text !");
