@@ -39,5 +39,9 @@
     <Optimize>False</Optimize>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="..\..\IRLPR\GlobalAssemblyInfo.cs" Link="GlobalAssemblyInfo.cs" />
+  </ItemGroup>
+
 
 </Project>
