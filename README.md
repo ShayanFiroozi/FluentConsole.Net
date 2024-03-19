@@ -164,6 +164,7 @@ Use **Visual Studio 2022** and open the solution 'FluentConsole.sln'.
 
 **FluentConsole.Net** solution is setup to support following .Net versions :
 
+- .Net Core 8.0
 - .Net Core 7.0
 - .Net Core 6.0
 - .Net Framework 4.8
