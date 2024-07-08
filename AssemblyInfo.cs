@@ -19,6 +19,6 @@ using System.Reflection;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TrendSoft® Fluent Console for .NET")]
+[assembly: AssemblyTitle("ResaGostar® Fluent Console for .NET")]
 [assembly: AssemblyDescription("کنسول حرفه‌ای برای دات نت")]
 [assembly: AssemblyProduct("کنسول حرفه‌ای برای دات نت")]
