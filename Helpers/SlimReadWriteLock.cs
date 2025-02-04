@@ -24,16 +24,22 @@ namespace FluentConsoleNet.Helpers
 
 
         internal static void GainReadLock() => Lock.EnterReadLock();
-        internal static void GainWriteLock()
-        {
+        internal static void GainWriteLock() => Lock.EnterWriteLock();
 
-            Lock.EnterWriteLock();
+        internal static void ReleaseReadLock()
+        {
+            if (Lock.IsReadLockHeld)
+            {
+                Lock.ExitReadLock();
+            }
         }
 
-        internal static void ReleaseReadLock() => Lock.ExitReadLock();
         internal static void RelaseWriteLock()
         {
-            Lock.ExitWriteLock();
+            if (Lock.IsWriteLockHeld)
+            {
+                Lock.ExitWriteLock();
+            }
         }
     }
 }

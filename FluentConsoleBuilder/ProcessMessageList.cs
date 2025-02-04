@@ -26,10 +26,12 @@ namespace FluentConsoleNet.Builder
 
             StringBuilder totalText = new StringBuilder();
 
+            // Gain The Write Lock
+            SlimReadWriteLock.GainWriteLock();
+
+
             try
             {
-                // Gain The Write Lock
-                SlimReadWriteLock.GainWriteLock();
 
                 foreach (string message in MessageList)
                 {
